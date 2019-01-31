@@ -31,47 +31,133 @@ To see the folder you are currently in, type: `pwd` and hit return. `pwd` stands
 
 #### Here are some basic commands for getting around, making, deleting and copying files and folders.
 
+Make the computer say hi to you. 
 
-**`pwd`** stands for "print working directory". It prints out where you are:
+```
+echo hi
+```
+No, actually make the computer say hi.(Make sure your speakers are on for this one). 
 
-```bash
+```
+say hi your name! how are you doing today? 
+
+```
+
+There some [other voices available (but they are limited)](https://gohgarry.wordpress.com/2010/01/16/fun-with-mac-say-command/). May need to enable them at System Preferences --> Accessibility --> Speech. Specify them like this: 
+
+```
+say -v Karen hello
+
+```
+Okay. Enough of that. 
+Navigate to a directory (aka folder) on your computer. You may have done this before. (cd stands for change directory). 
+
+```
+cd [drag and drop your folder here or type the path] 
+```
+
+List contents of current directory 
+
+```
+ls 
+```
+
+Show name of current directory and full path. 
+###### Path means the route that your computer will take to reach a particular file. To the computer, this is a "string" of text that it will follow to find your file. 
+###### Fun fact: pwd stands for print working directory. 
+
+```
 pwd
 ```
 
-**`ls`** stands for "list". It lists the contents of current directory.
+Go up one
 
-```bash
-ls
 ```
-
-**`cd`** stands for "change directory". Type `cd` and then the directory you want to go to. For example, change to the Desktop from your home folder:
-
-```bash
-cd Desktop
-```
-
-To go into the parent folder, up one level in the file structure, type `..` or `../` instead of a folder name, like so:
-
-```bash
 cd ..
 ```
 
 If you type `cd` without a folder name after, it takes you back to your home folder.
 
+```
+cd
+```
 
-**`mkdir`** stands for "make directory". Type `mkdir` and then a name to make a folder. For example, make a folder called "cool_project":
+Now go to desktop
+
+```
+cd desktop
+```
+
+
+**`mkdir`** stands for "make directory". In this context, director = folder. Type `mkdir` and then a name to make a folder. For example, make a folder called "cool_project":
 
 ```bash
 mkdir cool_project
 ```
 
-**`mv`** stands for "move". It lets you move files and folders and also rename them. To rename a file:
+Get yourself into cool_project:
+```bash
+cd path/to/cool_project
+cd desktop/cool_project
+```
+
+**`cat`** stands for "concatenate" and it shows you the contents of a file. 
+
+```bash
+cat frozenlyrics.txt
+```
+
+Maybe you don't have a file called frozenlyrics.txt inside your cool_project folder. Don't worry. You can use **`cat >`** to make one. Call it whatever you want. 
+
+```
+cat > frozenlyrics.txt
+```
+
+When you push enter this time, you don't go back to the prompt. You get a cursor. You can now add text to your file.
+Type some song lyrics that you like, or write down what you ate for breakfast.
+
+```
+The snow glows white on the mountain tonight
+Not a footprint to be seen
+A kingdom of isolation,
+And it looks like I'm the queen.
+
+I didn't get to eat breakfast today :(
+```
+Now get out of there and save your file. 
+
+```
+CONTROL D. 
+```
+Go check to see if your file is there. 
+
+Open your file using the default application (mac only)
+
+```
+open FILENAME
+```
+
+Open the current directory in the Finder (mac only)
+(the ```.``` means "here")
+
+```
+open .
+```
+
+Print the contents of a file to the screen
+
+```
+cat FILENAME
+```
+
+
+**`mv`** stands for "move". It lets you move files and folders and also rename them. To rename a file. Rename your file. 
 
 ```bash
 mv oldname.txt newname.txt
 ```
 
-**`cp`** stands for "copy". It lets duplicate files:
+**`cp`** stands for "copy". It lets you duplicate files. Make a copy of your file. 
 
 ```bash
 cp draft.txt draft_copy.txt
@@ -85,11 +171,6 @@ rm bad_selfie.jpg
 
 Please note, `rm` will **not** ask for confirmation, and it will not move files to the trash. It'll just delete them immediately, so be careful.
 
-**`cat`** stands for "concatenate" and it shows you the contents of a file and also allows you to join two files together. For example, to print out the entirety of Moby Dick:
-
-```bash
-cat mobydick.txt
-```
 
 **`more`** is like `cat` but will paginate the output if it is larger than the size of your terminal window:
 
@@ -108,12 +189,16 @@ file mysterfile.what
 
 ```bash
 sort names.txt
+
+sort frozenlyrics.txt
 ```
 
 **`grep`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in Moby Dick containing the word "whale".
 
 ```bash
-grep whale mobydick.txt
+grep "search term" FILENAME
+
+grep heart LucidDreams.txt
 ```
 
 ## Command Line Options and Getting Help
@@ -131,19 +216,19 @@ command_name [options] arguments
 For example, the `sort` command outputs in ascending order by default, but you can have it use reverse order with the `-r` option, like so:
 
 ```bash
-sort -r mobydick.txt
+sort -r LucidDreams.txt
 ```
 
 You can also tell `sort` to only output unique lines (ie, to remove any duplicate lines) with the `-u` option:
 
 ```bash
-sort -u mobydick.txt
+sort -u LucidDreams.txt
 ```
 
 Finally you can combine options:
 
 ```bash
-sort -u -r mobydick.txt
+sort -u -r LucidDreams.txt
 ```
 
 Sometimes, options have parameters. For example, the `cut` command cuts out portions of each line of a file. To use it you must specify a delimiter character with the `-d` option and field number to extract with the `-f` option.  To get the first word of every line in Moby Dick I might enter:
