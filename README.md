@@ -20,6 +20,8 @@ Python install. Virtual Environments. Basic Python operations.
 * Use your sentences to create a generative poem.
 * Some supplemental exploration. 
 
+---
+
 ### 3. Word counts. Getting data. 
 
 Where can you find interesting text. What can you do with it? 
