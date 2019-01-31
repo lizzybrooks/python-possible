@@ -1,99 +1,82 @@
-# Scrapism
+# Creative Coding in Python. 
 
 (draft syllabus)
 
-**Instructor:** [Sam Lavigne](http://lav.io) | [splavigne@gmail.com](mailto:splavigne@gmail.com)  
-**Teaching Assistant:** TBD  
-**Track:** Code Poetry, Fall 2018  
-**Location:** [School for Poetic Computation](http://sfpc.io/) | 155 Bank St, New York, NY 10014  
-**Time:** Tuesdays 10am to 1pm  
-**Office Hours:** Tuesdays 2pm to 4pm (or by appointment)  
-**Class Notes:** [link](https://paper.dropbox.com/folder/show/Class-Notes-e.1gg8YzoPEhbTkrhvQwJ2zz3XJBcZkbceseDnY854qf9k5dPQtUC2)
-
-Scrapism is the artistic practice of web scraping, or of automatically collecting and transforming found digital material. It hinges upon a combination of curatorial practice, reverse engineering, and hoarding mentality. In this class students will learn how to scrape massive quantities of material from the internet with Python, and then use that material to make poetic, satirical, critical, political projects. Each session we will cover a different web scraping technique, with production assignments relating to text, image and video. We will explore surrealist, dadaist, situationist techniques such as detournement, collage, and cut-ups, and apply them to a contemporary digital context.
-
 ## Schedule
 
-### 1. September 18th
+### 1. Command Line
 
-Introductions. Using the terminal. Basic python. Reading lines.
-
-#### Readings  
-* [Intro to the command line](https://github.com/antiboredom/sfpc-scrapism/blob/master/reader-01-the-command-line.md)
-* [Python basics](https://github.com/antiboredom/sfpc-scrapism/blob/master/reader-02-python-basics.md)
-* [Artificial Hells (introduction and chapter 1)](https://selforganizedseminar.files.wordpress.com/2011/08/bishop-claire-artificial-hells-participatory-art-and-politics-spectatorship.pdf) By Claire Bishop
-* [A User’s Guide to Détournement](http://www.bopsecrets.org/SI/detourn.htm)
+Using the terminal.
 
 #### Assignment
-* Find three sentences (or phrases) in the wild. Your sentences could come from the internet or the real world, from a book, a store sign, a facebook post, a news article, product packaging, or from a restaurant menu. Anything is fine, but you must not write it yourself. Be prepared to recite what you have found next week in class.  
+* Find three sentences (or phrases) in the wild. Your sentences could come from the internet or the real world, from a book, a song, a store sign, a facebook post, a news article, product packaging, or from a restaurant menu. Anything is fine, but you must not write it yourself.  
 
 ---
+### 2. Installing Python
 
-### 2. September 25th
-
-Python part 2. Manipulating text. Automating writing.
-
-#### Readings  
-* Tech reading 2 TBD  
-* [The Cut Up Method](http://www.writing.upenn.edu/~afilreis/88v/burroughs-cutup.html) by William Burroughs
+Python install. Virtual Environments. Basic Python operations. 
 
 #### Assignment
-* Transform a non-poetic text into a poetic text using Python. It is up to you to determine how and why a text is poetic or non-poetic. If you are stuck, try techniques like sorting, randomizing, filtering, deleting, or replacing.
+* Use your sentences to create a generative poem.
+* Some supplemental exploration. 
+
+### 3. Word counts. Getting data. 
+
+Where can you find interesting text. What can you do with it? 
+Word counting. Web scrapting. 
+
+#### Assignment
+* Word counts
 
 ---
 
-### 3. October 2nd
+### 4. Mash-Up 
 
-Web scraping basics.  Making big lists.
+Manipulating Text. 
 
-#### Readings  
-* Tech reading 3
-* [Uncreative Writing](https://www.chronicle.com/article/Uncreative-Writing/128908) by Kenneth Goldsmith
-
----
-
-### 4. October 9th
-
-Web scraping part 2. APIs. Advanced text manipulation and parsing.
-
-#### Readings  
-* Tech reading 4
-* [Digital Divide](https://www.artforum.com/print/201207/digital-divide-contemporary-art-and-new-media-31944) by Claire Bishop
-* [Montage](https://lucian.uchicago.edu/blogs/mediatheory/keywords/montage/) by Jared Leibowich
+#### Assignment
+* algorithmically combine two texts
 
 ---
 
-### 5. October 16th
+### 5. Add images
+
+#### Assignment
+* Use web scraping to get images 
+
+
+---
+
+### 6. Put it all together
 
 Automating collage.
 
 #### Readings  
-* Tech reading 5
 * [Too Much World: Is the Internet Dead?](https://www.e-flux.com/journal/49/60004/too-much-world-is-the-internet-dead/) by Hito Steyerl
 
----
-
-### 6. October 23rd
-
-Automating video.
-
-#### Readings  
-* Tech reading 6
-* [Surrealism: the Last Snapshot of the European Intelligentsia](https://monoskop.org/images/a/a0/Benjamin_Walter_1929_1978_Surrealism_The_Last_Snapshot_of_the_European_Intelligentsia.pdf) by Walter Benjamin
+#### Assignment
+* Use p5 to display everything you built with Python
 
 ---
 
-### 7. October 30th
+### 7. Natural Language Processing
 
-Bots and project work.
+What is machine learning? What are its implications? How can we use it? 
+
+
+---
+
+### 8. Catch up
+
+Do your best
 
 ---
 
 
 ## Fun/useful Python Libraries
 * [moviepy](http://zulko.github.io/moviepy/) - edit video
-* [vidpy](http://antiboredom.github.com/vidpy/) - edit video (my library)
-* [videogrep](http://antiboredom.github.com/videogrep/) - make supercuts (my library)
+* [vidpy](http://antiboredom.github.com/vidpy/) - edit video 
+* [videogrep](http://antiboredom.github.com/videogrep/) - make supercuts 
 * [youtube-dl](https://rg3.github.io/youtube-dl/) - download videos
 * [pillow](https://python-pillow.org/) - edit images
 * [flask](http://flask.pocoo.org/) - web server
