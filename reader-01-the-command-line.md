@@ -159,6 +159,11 @@ mv frozenlyrics.txt Frozen_Lyrics.txt
 cp Frozen_Lyrics.txt Frozen_Lyrics2.txt
 ```
 
+**`touch`** will make a new empty file. 
+
+```bash
+touch nothinginhere.txt
+```
 
 **`sort`** sorts a file alphabetically by line and prints the output to the screen
 
