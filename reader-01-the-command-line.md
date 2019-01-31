@@ -23,14 +23,6 @@ The basic use of the command line is: 1) you type a command, 2) you hit return, 
 
 ## Basic Navigation & File Operations
 
-*Please note I use the word "directory" and "folder" interchangeably.*
-
-When you open a new terminal window, you are placed inside your home folder. On a Mac this is `/Users/myusername` and on Linux, `/home/myusername`. 
-
-To see the folder you are currently in, type: `pwd` and hit return. `pwd` stands for "print working directory", or in other words, "show me the directory I am currently working from".
-
-#### Here are some basic commands for getting around, making, deleting and copying files and folders.
-
 Make the computer say hi to you. 
 
 ```
