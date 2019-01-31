@@ -141,19 +141,72 @@ Print the contents of a file to the screen
 cat FILENAME
 ```
 
+Say the contents of the file
+
+```
+cat frozenlyrics.txt | say -v Karen
+```
 
 **`mv`** stands for "move". It lets you move files and folders and also rename them. To rename a file. Rename your file. 
 
 ```bash
-mv oldname.txt newname.txt
+mv frozenlyrics.txt Frozen_Lyrics.txt
 ```
 
 **`cp`** stands for "copy". It lets you duplicate files. Make a copy of your file. 
 
 ```bash
-cp draft.txt draft_copy.txt
+cp Frozen_Lyrics.txt Frozen_Lyrics2.txt
 ```
 
+
+**`sort`** sorts a file alphabetically by line and prints the output to the screen
+
+```bash
+sort names.txt
+
+sort LucidDreams.txt
+```
+Do you like that? Maybe you want to save it to a new file. `>` will create a file if it does not already exist, or overwrite one if it does. You can use `>>` instead to append to a file. 
+
+```bash
+sort LucidDreams.txt > remixedLucidDreams.txt
+
+```
+
+**`grep`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in Moby Dick containing the word "whale".
+
+```bash
+grep "search term" FILENAME
+
+grep heart LucidDreams.txt
+```
+
+You may really need to hear this out loud: 
+
+```
+grep "search term" FILENAME | say -v Voice
+
+grep "heart" LucidDreams.txt | say -v Ralph
+```
+
+Unix has a very powerful concept called "pipes" which allow us to chain commands together, effectively feeding the output of one command into the input of another. To do so, we use the `|` symbol.
+
+Extract all lines of Moby Dick containing "whale", then sort them.
+
+```bash
+grep heart LucidDreams.txt | sort -u
+```
+
+The `|` here means "take the output of the grep command and send it to sort -u". You can use as many pipes as you desire, and combine this technique with the output redirection.
+
+Extract all lines of Moby Dick containing "whale", then sort them, then save to a new file called "sorted_whales.txt"
+
+```bash
+grep heart LucidDreams.txt | sort -u > remixed_dreams.txt
+```
+
+Is it becoming too much??
 **`rm`** stands for "remove". It lets you delete files:
 
 ```bash
@@ -174,22 +227,6 @@ more mobydick.txt
 
 ```bash
 file mysterfile.what
-```
-
-**`sort`** sorts a file alphabetically by line and prints the output to the screen
-
-```bash
-sort names.txt
-
-sort frozenlyrics.txt
-```
-
-**`grep`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in Moby Dick containing the word "whale".
-
-```bash
-grep "search term" FILENAME
-
-grep heart LucidDreams.txt
 ```
 
 ## Command Line Options and Getting Help
@@ -225,7 +262,7 @@ sort -u -r LucidDreams.txt
 Sometimes, options have parameters. For example, the `cut` command cuts out portions of each line of a file. To use it you must specify a delimiter character with the `-d` option and field number to extract with the `-f` option.  To get the first word of every line in Moby Dick I might enter:
 
 ```bash
-cut -d " " -f 1 mobydick.txt
+cut -d " " -f 1 LucidDreams.txt
 ```
 
 To see all the options and view a manual for any command, use the `man` tool (short for "manual")
@@ -235,34 +272,6 @@ man cut
 ```
 
 Use the arrow keys to navigate, and `q` to exit.
-
-## Piping and Directing Output
-
-Most commands will produce output on the screen. However we can also automatically save that output to the filesystem using the `>` character followed by a filename.
-
-Sort a file called "names.txt", and save the output to a new file called "sorted_names.txt":
-
-```bash
-sort names.txt > sorted_names.txt
-```
-
-`>` will create a file if it does not already exist, or overwrite one if it does. You can use `>>` instead to append to a file.
-
-Unix also has a very powerful concept called "pipes" which allow us to chain commands together, effectively feeding the output of one command into the input of another. To do so, we use the `|` symbol.
-
-Extract all lines of Moby Dick containing "whale", then sort them.
-
-```bash
-grep whale mobydick.txt | sort -u
-```
-
-The `|` here means "take the output of the grep command and send it to sort -u". You can use as many pipes as you desire, and combine this technique with the output redirection.
-
-Extract all lines of Moby Dick containing "whale", then sort them, then save to a new file called "sorted_whales.txt"
-
-```bash
-grep whale mobydick.txt | sort -u > sorted_whales.txt
-```
 
 
 ## The Structure of the Filesytem
