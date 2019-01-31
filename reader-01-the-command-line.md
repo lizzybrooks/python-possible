@@ -197,7 +197,7 @@ grep "heart" LucidDreams.txt | say -v Ralph
 
 Unix has a very powerful concept called "pipes" which allow us to chain commands together, effectively feeding the output of one command into the input of another. To do so, we use the `|` symbol.
 
-Extract all lines of Moby Dick containing "whale", then sort them.
+Extract all lines of Lucid Dreams containing "heart", then sort them.
 
 ```bash
 grep heart LucidDreams.txt | sort -u
@@ -205,7 +205,7 @@ grep heart LucidDreams.txt | sort -u
 
 The `|` here means "take the output of the grep command and send it to sort -u". You can use as many pipes as you desire, and combine this technique with the output redirection.
 
-Extract all lines of Moby Dick containing "whale", then sort them, then save to a new file called "sorted_whales.txt"
+Extract all lines of Lucid Dreams containing "heart", then sort them, then save to a new file called "remixed_dreams.txt"
 
 ```bash
 grep heart LucidDreams.txt | sort -u > remixed_dreams.txt
@@ -231,7 +231,7 @@ more mobydick.txt
 **`file`** provides basic info about a file:
 
 ```bash
-file mysterfile.what
+file mysteryfile.what
 ```
 
 ## Command Line Options and Getting Help
@@ -264,7 +264,7 @@ Finally you can combine options:
 sort -u -r LucidDreams.txt
 ```
 
-Sometimes, options have parameters. For example, the `cut` command cuts out portions of each line of a file. To use it you must specify a delimiter character with the `-d` option and field number to extract with the `-f` option.  To get the first word of every line in Moby Dick I might enter:
+Sometimes, options have parameters. For example, the `cut` command cuts out portions of each line of a file. To use it you must specify a delimiter character with the `-d` option and field number to extract with the `-f` option.  To get the first word of every line in Lucid Dreams I might enter:
 
 ```bash
 cut -d " " -f 1 LucidDreams.txt
@@ -286,10 +286,10 @@ Everything on your computer is either a file or a folder, and these files and fo
 ```
 /
 	Users/
-  		sam/
+  		lizzy/
    			Desktop/
-	  			trotsky.jpg
-	  			the_man_without_qualities.txt
+	  			sunshine.jpg
+	  			lovewilltearyouapart.txt
 	 		Documents/
 	 		Downloads/			
 		Guest/
@@ -299,10 +299,10 @@ Everything on your computer is either a file or a folder, and these files and fo
 
 Each file and folder has a unique location on the filesystem. This location is called a "path". You can reference files and folders either by their **relative** path, or by their **absolute** or **full** path. In the previous examples I have been using the relative path - that is, I have been referencing files relative to where I currently am. **A path is absolute if it begins with a `/`**
 
-For example the absolute path to `the_man_without_qualities.txt` in the above filesystem is `/Users/sam/Desktop/the_man_without_qualities.txt`. I can look inside the contents of this file, from any working directory, with this command:
+For example the absolute path to `lovewilltearyouapart.txt` in the above filesystem is `/Users/lizzy/Desktop/lovewilltearyouapart.txt`. I can look inside the contents of this file, from any working directory, with this command:
 
 ```bash
-more /Users/sam/Desktop/the_man_without_qualities.txt
+more /Users/lizzy/Desktop/lovewilltearyouapart.txt
 ```
 
 There are a few shortcuts for dealing paths as well. 
@@ -349,3 +349,10 @@ It can take a while to get used to the command line, but there are a few tips an
 * Drag a folder or file onto the terminal to fill in its absolute path
 * Type ctrl-a to move your cursor to the beginning of the line, and ctrl-e to the end
 
+## Further fun
+
+There are lots of programs that you can run through the command line interface, so feel free to explore and try things out.
+
+There's a software called youtube-gl that allows you to download any video from youtube.You can use that in combination with a command line video editor called ffmpeg to do some really cool stuff. [Here's a tutorial to get you started with that.](https://github.com/antiboredom/automating-video-itp/blob/master/FFMPEG.md)
+
+Congratulations on your new knowledge. Remember, it's just the beginning. If you want to explore more of what the command line can do, [here is a good, thorough tutorial](https://www.learnenough.com/command-line-tutorial/basics). 
