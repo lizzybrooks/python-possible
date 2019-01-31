@@ -97,7 +97,6 @@ mkdir cool_project
 
 Get yourself into cool_project:
 ```bash
-cd path/to/cool_project
 cd desktop/cool_project
 ```
 
