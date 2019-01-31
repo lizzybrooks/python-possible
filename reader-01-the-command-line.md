@@ -1,4 +1,4 @@
-# Reader 01 - The Command Line
+#  - The Command Line -
 
 The command line is a text-based interface for interacting with your computer. From the command line you can launch programs, view files, and manipulate your file system by making, moving, and copying files and directories. You can think of it as the Finder in Mac, without the graphic interface, but much more powerful.
 
@@ -14,7 +14,7 @@ To get started on Windows you will need to set up the Windows Subsystem for Linu
 When you open up your terminal application you'll see something like this:
 
 ```bash
-SamsComputer:~ sam$
+LizzysComputer:~ lizzy$
 ```
 
 This is called the "prompt". By default (on a Mac) it shows the name of the computer, the directory that you are currently in, your username, and then a $ sign.
