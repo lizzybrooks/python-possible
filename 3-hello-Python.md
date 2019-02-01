@@ -1,3 +1,19 @@
+## Basics
+
+To start, add your Virtual Environment folder to your text editor. So, in Atom, go to File --> Add Project Folder, and choose your Virtual Environment. This is where you'll build your project, and it also holds your Python installation and all your dependencies (like libraries). 
+
+In that folder, create a new file called `hello.py` and put this in it:
+
+```python
+print("Hello Python, nice to meet you.")
+```
+
+Run this script in your editor (in Atom, `COMMAND i`). 
+
+You should see "Hello Python, nice to meet you." printed on the screen.
+
+
+
 1) For Loops
 I found that a normal for loop in JavaScript looks like this:
 
