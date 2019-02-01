@@ -30,9 +30,12 @@ brew install python3
 Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. 
 I will update this list with links to good script packages. 
 
+* Atom : Go to Atom --> Preferences --> Packages and search for **Script**. 
+⋅⋅* You might also want a Python autocomplete package. [Here's a good one](https://atom.io/packages/autocomplete-python). 
+⋅⋅* While you're installing stuff in Atom, you might play around with themes to color the text and background. I like Atom-Material [syntax])https://atom.io/themes/atom-material-syntax) and [UI](https://atom.io/themes/atom-material-ui). 
+
 * [Visual Studio Code](https://code.visualstudio.com/)
-* [Atom](https://atom.io/)
-* [Sublime](https://www.sublimetext.com/) (not free)
+⋅⋅* Install [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 
 ### Create a Virtual Environment for your Python Project
