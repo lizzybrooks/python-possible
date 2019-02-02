@@ -31,7 +31,7 @@ NOTE: If you think you may already have Python installed, you can run this comma
 python --version
 ```
 
-### Create a Virtual Environment for your Python Project
+## Create a Virtual Environment for your Python Project
 
 One of the great things about Python is that it's modular. There's a basic template, Python 2.7 or 3, which you installed, and then there are lots of other pieces that you can add when you need them. These pieces are called packages or dependencies. They're like code libraries that bring you extra functionality and you can install them a la carte. Python stays relatively lightweight and you install what you need. 
 
@@ -39,19 +39,53 @@ The problem with this system is that sometimes the packages conflict with one an
 
 Ugg. 
 
-The solution is to create a special folder on your hard drive for each Python project. This folder is called a **Virtual Environment :)**
+The solution is to create a special folder on your hard drive for each Python project. This folder is called a **Virtual Environment**
 
 Your virtual environment contains an isolated copy of Python and the packages that you need for your project. Each project should have its own virtual environment. 
 
+#### If you prefer watching videos to reading instructions, you can follow [this tutorial](https://www.youtube.com/watch?v=nnhjvHYRsmM) to set up virtual environments. 
+
+#### If you prefer following written instructions, read on:
+
+1. Install virtualenv. Virtualenv is a tool to create isolated Python environments. It basically creates a folder that's a copy of your Python installation, with everything you need inside. Then you build your Python project inside that folder. 
+
+You install virtualenv via the command line, with this simple line of code: 
+
+```bash
+pip install virtualenv
+```
+If that gives you an error, make sure you have pip installed (pip is Python's package manager). 
+
+```bash
+pip --version
+```
+Test your installation of virtualenv:
+
+```bash
+virtualenv --version
+```
+If that gives you some number (e.g. 16.3.0), that means that you have the software installed. Good job. 
+
+Now cd to your Documents (or Desktop, if you prefer to store your work there), and make a folder to hold the projects that you will do in this class. I'm going to call mine pythonland, but you feel free to come up with a better name. 
+
+```bash
+cd Documents
+mkdir pythonland
+cd pythonland
+```
+Inside pythonland (or your project folder), create a virtual environment, aka a copy of your python installation. I'll call mind february_projects. Again, call yours what you want. 
+If you don't give it a name and just type virtualenv, it will copy all the python files into the current directory (i.e. pythonland). 
+
+```bash
+virtualenv february_projects
+```
+Okay. Now you should see a folder called february_projects (or whatever you called yours) that holds a lot of Python files. I hope it worked!
+
+## Run Python from the command line
 
 
-Here will be instructions for how to set up a virtual environment: But now I have [this video](https://www.youtube.com/watch?v=nnhjvHYRsmM)
 
-### Run Python from the command line
-
-
-
-### Add a script extension to your favorite text editor 
+## Add a script extension to your favorite text editor 
 
 Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. 
 I will update this list with links to good script packages. 
