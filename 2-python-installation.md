@@ -134,7 +134,8 @@ Editing a text file and running it through the command line is a perfectly good 
 Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. Or you can use an IDE (integrated development environment), which will usually have something like a play button to run your code. 
 
 
-* Atom : Go to Atom --> Preferences --> Packages and search for **Script**. 
+* Atom  
+  * Install [script](https://atom.io/packages/script)
   * You might also want a Python autocomplete package. [Here's a good one](https://atom.io/packages/autocomplete-python). 
   * While you're installing stuff in Atom, you might play around with themes to color the text and background. I like Atom-Material [syntax](https://atom.io/themes/atom-material-syntax) and [UI](https://atom.io/themes/atom-material-ui). 
 
