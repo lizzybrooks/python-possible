@@ -12,22 +12,7 @@ Run this script in your editor (in Atom, `COMMAND i`).
 
 You should see "Hello Python, nice to meet you." printed on the screen.
 
-## Coding in Python is just like coding in JavaScript or any other language. You've got... 
-
-### Variables
-
-You can store the value of expressions inside named variables using the `=` symbol.
-
-```python
-x = 2
-y = 5
-z = x + y
-print(x * 100)
-print(z)
-```
-Store your name as a variable and print it to the screen. 
-
-### Expressions: Use Python to do some math
+### Expressions
 
 An "expression" is a set of instructions for the computer to execute. Python will read or evaluate your expressions and return a result. For example you can add numbers:
 
@@ -36,7 +21,6 @@ print(1+1)
 print(10/2)
 print(100 * 6.2 - 70/3.5)
 ```
-
 You can also test to see how different expressions relate to each other. 
 
 `==` tests for equality  
@@ -53,49 +37,204 @@ print(5 * 20 >= 100/13)
 ```
 All of these expressions will evaluate to either a `True` or a `False`
 
+Try evaluating a few of your own expressions. 
+
+## Coding in Python is just like coding in JavaScript or any other language. You've got... 
+
+### Variables
+
+You can store the value of expressions inside named variables using the `=` symbol.
+
+```python
+x = 2
+y = 5
+z = x + y
+print(x * 100)
+print(z)
+```
+Store your name as a variable and print it to the screen. 
+
+#### Types
+
+Values stored in variables (all values actually) have different "types" or categories. 
+For example, 1 is an integer, 1.5 is a float.
+
+You can see what type a value is is by using the `type` function:
+
+```python
+print(type(1))
+```
+
+Some important types are:
+
+```python
+a_number = 1 				# an integer
+another_number = 5.1 		# a float
+some_string = "Hello!" 		# a string
+some_boolean = True 		# a boolean (notice the capitalization)
+a_list = ["a bunch", "of", "stuff", a_number, some_string]
+a_dictionary = {"key1": 10, "key2": "a string"} # a dictionary (key/value pairs)
+```
+
+In Python you do not need to declare variable types, or even that you are declaring a variable, you simply type a name, the equals sign, and then a value or expression.
+
+### Strings
+
+Strings are a variable type that stores text. To create a string, surround some text within quotation marks. It doesn't matter if you use single or double quotes as long as you are consistent.
+
+```python
+first_name = "Kanye"
+last_name = 'West'
+
+print(first_name)
+print(last_name)
+```
+
+If you add two or more strings together, Python will combine a new string for you.
+
+```python
+first_name = "Kanye"
+last_name = 'West'
+
+print(first_name + last_name)
+
+print(first_name + " " + last_name)
+```
+
+Each character in a string is indexed numerically, and can access individual characters using `[]` square brackets. 
+
+```python
+name = "Kanye West"
+first_letter = name[0]
+print(first_letter)
+
+second_letter = name[1]
+print(second_letter)
+```
+
+The character index begins with the number 0. If you wish to access the last character, you use `-1`. The second to last, `-2` and so on.
+
+```python
+name = "Kanye West"
+last_letter = name[-1]
+print(last_letter)
+```
+
+You can also get a range of characters in a string by entering a starting and ending index in your square brackets:
 
 
-1) For Loops
-I found that a normal for loop in JavaScript looks like this:
+```python
+name = "Kanye West"
+first_three_letters = name[0:3]
+print(first_three_letters)
+```
 
-for (var i = 0; i < array.length; i++) {
-    array[i]
-  }
-However, in Python, it looks more like the JavaScript “for in” loop:
+To get the total length of a string, use the `len()` function.
 
-for x in range(0, 3):
-    print "We're on time %d" % (x)
-for loop from 0 to 2, therefore running 3 times.
+```python
+print(len("hello!"))
+```
 
-2) Variables
-In JavaScript, variables need to be defined by first calling “let, var or const”.
+You can also determine if a string exists within another string with the `in` keyword.
 
-let x = 1
-const y = 2
-var z = 3
-let my_array = [1, 2, 3, 4]
-In Python, you can simply type the variable name without defining it as a variable.
+```python
+sentence = "You don't see just how wild the crowd is? You don't see just how fly my style is?"
+print("fly" in sentence)
+```
 
-x = 1
-y = 2
-z = 3
-my_array = [1, 2, 3, 4]
-3) Functions
-In JavaScript, functions are called using “function” and can take a parameter, or multiple parameters:
+#### String methods
 
-function test_prime(n){
-// do stuff
-}
-In Python, they are basically the same but are called using the keyword “def” instead.
+Python's string implementation comes with many useful methods that allow you to transform and get information about strings.
 
-def test_prime(n):
-   //do stuff
-Another major difference between function calls is that in JavaScript, the work inside the function is always between curly braces, following the parameters. In Python, a function begins with a colon, and instead of curly braces, the function is anything indented below the line calling the function. With some of the packages we installed earlier, you’ll often see “unexpected indent” letting you know that you’ve indented something that doesn’t need to be there. This is a little hard to get used to, if you’re more familiar with something like JavaScript, where indentions don’t affect the code.
+For example, to make a string uppercase:
 
-4) console log
-In JavaScript, if you want to run a script, or block of code, you can simply console.log it
+```python
+sentence = "hello there!"
+uppercase = sentence.upper()
+print(uppercase)
+```
 
-console.log(my_function);
-In Python, you generally use the “print” command
+Here are a few more examples of things that you can do
 
-print solution
+```python
+sentence = "   HELLO THERE   "
+
+# make it uppercase
+lowercase_sentence = sentence.lower()
+
+# make it title case
+titlecase_sentence = sentence.title()
+
+# remove white space at the start and end
+stripped = sentence.strip()
+
+# replace one set of characters with another
+goodby_sentence = sentence.replace("HELLO", "GOODBYE")
+```
+
+Here's a full list: [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
+
+### Lists
+
+A list is a numerically ordered collection of values, also known as an array.
+
+```python
+# make an empty list
+my_list = []
+
+# add something to our list with the "append" method
+my_list.append("hi") # the list will now look like this: ["hi"]
+
+# add some more stuff
+my_list.append(45)
+my_list.append(100.2)
+my_list.append("whatever")
+
+# now our list will look like this:
+# ["hi", 45, 100.2, "whatever"]
+
+# get the length of a list
+len(my_list)
+
+# you can access individual items in the list by referrring to their index value
+print my_list[0] # prints "hi"
+print my_list[2] # prints 100.2
+
+# use negative numbers to start at the back
+print my_list[-1] # prints "6" - the last item
+
+# you can access part of a list with a ":"
+my_list[1:3] # will be [45, 100.2, "whatever"]
+```
+
+You can iterate through every value in a list with the `for` keyword:
+
+```python
+for item in my_list:
+	print(item)
+```
+
+### Reading files
+
+To open a file in Python, use the `open()` keyword function. The function takes two arguments. The first is the name of the file to open, and the second is a flag that states if we are opening the file with the intent of *reading* to it (use "r"), or *writing* to it (use "w").
+
+Once we have opened a file, we use the `read` function to grab it's contents and return then as a string.
+
+In this example, we open a file and store its contents in a string. We then uppercase the entire file and print it to the screen.
+
+```python
+content = open("frozen_lyrics.txt", "r").read()
+loud_frozen = content.upper()
+print(loud_frozen)
+```
+
+You can also store a file as a list of lines using `readlines()` instead of `read()`
+
+This example prints the first 5 characters of a text file.
+
+```python
+all_lines = open("frozen_lyrics.txt", "r").readlines()
+for line in all_lines:
+	print(line[0:5])
+```
+
