@@ -141,7 +141,7 @@ Unlike JavaScript, which runs when you load your website into a browser, a pytho
 
 * [Visual Studio Code](https://code.visualstudio.com/)
   * Install the [Python Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python), which essentially makes your text editor into an IDE (I think). 
-  * Install [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+  * or install [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 * [PyCharm](https://www.jetbrains.com/pycharm/) is a nice IDE. The free community version is good. 
 
