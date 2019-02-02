@@ -147,6 +147,15 @@ Say the contents of the file
 cat frozenlyrics.txt | say -v Karen
 ```
 
+Maybe you just remembered some more lyrics that you need to add. `cat >>` will append or add text to the end of your file.
+
+```
+cat >>frozenlyrics.txt
+
+The wind is howling like this swirling storm inside
+Couldn't keep it in, heaven knows I've tried
+```
+
 **`mv`** stands for "move". It lets you move files and folders and also rename them. To rename a file. Rename your file. 
 
 ```bash
