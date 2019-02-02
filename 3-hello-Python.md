@@ -1,20 +1,22 @@
 ## Basics
 
-To start, add your Virtual Environment folder to your text editor. So, in Atom, go to File --> Add Project Folder, and choose your Virtual Environment. This is where you'll build your project, and it also holds your Python installation and all your dependencies (like libraries). 
+1. To start, add your Virtual Environment folder to your text editor. So, in Atom, go to File --> Add Project Folder, and choose your Virtual Environment. This is where you'll build your project, and it also holds your Python installation and all your dependencies (like libraries). 
 
-In that folder, create a new file called `hello.py` and put this in it:
+2. In that folder, create a new file called `hello.py` and put this in it:
 
 ```python
 print("Hello Python, nice to meet you.")
 ```
 
-Run this script in your editor (in Atom, `COMMAND i`). 
+3. Run this script in your editor (in Atom, `COMMAND i`). 
 
 You should see "Hello Python, nice to meet you." printed on the screen.
 
 ### Expressions
 
-An "expression" is a set of instructions for the computer to execute. Python will read or evaluate your expressions and return a result. For example you can add numbers:
+An "expression" is a set of instructions for the computer to execute. Python will read or evaluate your expressions and return a result. For example you can add numbers.
+
+4. Add these numbers and print the results: 
 
 ```python
 print(1+1)
@@ -37,13 +39,14 @@ print(5 * 20 >= 100/13)
 ```
 All of these expressions will evaluate to either a `True` or a `False`
 
-Try evaluating a few of your own expressions. 
+5. Try evaluating a few of your own expressions. Check if 1 == 2, etc.  
 
-## Python is sort of like a monster calculator. It's great at working with data. So, that's where we'll start. 
+## Python is sort of like a monster calculator. 
+It's great at working with data. So, that's where we'll start. 
 
 ### Variables
 
-You can store the value of expressions inside named variables using the `=` symbol.
+You can store the value of expressions inside named variables using the `=` symbol. Notice that you don't need any semi-colons. Hooray. 
 
 ```python
 x = 2
@@ -52,12 +55,14 @@ z = x + y
 print(x * 100)
 print(z)
 ```
-Store your name as a variable and print it to the screen. 
+
+6. Store your name as a variable and print it. 
+7. Add the ages of everyone at your table and print the total. 
 
 #### Types
 
 Values stored in variables (all values actually) have different "types" or categories. 
-For example, 1 is an integer, 1.5 is a float.
+For example, 1 is an integer, 1.5 is a float, and "hello" is a string.
 
 You can see what type a value is is by using the `type` function:
 
@@ -78,23 +83,52 @@ a_dictionary = {"key1": 10, "key2": "a string"} # a dictionary (key/value pairs)
 
 In Python you do not need to declare variable types, or even that you are declaring a variable, you simply type a name, the equals sign, and then a value or expression.
 
+8. Create a new variable of each type. For example:
+```python
+people_at_table = 4	        # an integer
+sandwiches_I_ate = 1.5 		# a float
+best_friend = "Abbas" 		# a string
+is_raining = False 		# a boolean (notice the capitalization)
+
+print(people_at_table)
+```
+
+9. Create a list. This is a lot like an array in JavaScript.
+
+```
+colors = ["blue", "pink", "turquoise", "sand"]
+dark_blue = [10, 27, 56]
+random_info = [people_at_table, sandwiches_I_ate, best_friend, is_raining]
+```
+
+10. Print some stuff from the list.
+```
+print(colors[2])
+print(dark_blue[0])
+print(random_info[-1])
+```
+Did you notice that you can check the last element in the list by scrolling around from the back with -1? Yup! That's awesome. 
+
 ### Strings
 
 Strings are a variable type that stores text. To create a string, surround some text within quotation marks. It doesn't matter if you use single or double quotes as long as you are consistent.
 
+11. Create a string with someone's name. 
+
 ```python
-first_name = "Kanye"
-last_name = 'West'
+first_name = "Cardi"
+last_name = 'B'
 
 print(first_name)
 print(last_name)
 ```
-
 If you add two or more strings together, Python will combine a new string for you.
 
+12. Add those strings: 
+
 ```python
-first_name = "Kanye"
-last_name = 'West'
+first_name = "Cardi"
+last_name = 'B'
 
 print(first_name + last_name)
 
@@ -103,8 +137,10 @@ print(first_name + " " + last_name)
 
 Each character in a string is indexed numerically, and can access individual characters using `[]` square brackets. 
 
+13. Print the first and second letters of your person's name: 
+
 ```python
-name = "Kanye West"
+name = "Cardi B"
 first_letter = name[0]
 print(first_letter)
 
@@ -115,7 +151,7 @@ print(second_letter)
 The character index begins with the number 0. If you wish to access the last character, you use `-1`. The second to last, `-2` and so on.
 
 ```python
-name = "Kanye West"
+name = "Cardi B"
 last_letter = name[-1]
 print(last_letter)
 ```
@@ -124,7 +160,7 @@ You can also get a range of characters in a string by entering a starting and en
 
 
 ```python
-name = "Kanye West"
+name = "Cardi B"
 first_three_letters = name[0:3]
 print(first_three_letters)
 ```
@@ -138,8 +174,9 @@ print(len("hello!"))
 You can also determine if a string exists within another string with the `in` keyword.
 
 ```python
-sentence = "You don't see just how wild the crowd is? You don't see just how fly my style is?"
-print("fly" in sentence)
+sentence = "I do what I like, I do, I do"
+print("do" in sentence)
+print("boss" in sentence)
 ```
 
 #### String methods
