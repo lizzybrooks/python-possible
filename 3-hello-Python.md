@@ -39,7 +39,7 @@ All of these expressions will evaluate to either a `True` or a `False`
 
 Try evaluating a few of your own expressions. 
 
-## Coding in Python is just like coding in JavaScript or any other language. You've got... 
+## Python is sort of like a monster calculator. It's great at working with data. So, that's where we'll start. 
 
 ### Variables
 
