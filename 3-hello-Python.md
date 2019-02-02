@@ -213,6 +213,22 @@ You can iterate through every value in a list with the `for` keyword:
 for item in my_list:
 	print(item)
 ```
+A normal for loop in JavaScript looks something like this:
+
+```javascript
+for (var i = 0; i < 3; i++) {
+    print(i); 
+  }
+```  
+  
+In Python, it has a different structure, but it does the same thing:
+
+```python
+for x in range(0, 3):
+  print(x)
+
+```    
+
 
 ### Reading files
 
