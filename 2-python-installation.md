@@ -59,21 +59,21 @@ If that gives you an error, make sure you have pip installed (pip is Python's pa
 ```bash
 pip --version
 ```
-Test your installation of virtualenv:
+2. Test your installation of virtualenv:
 
 ```bash
 virtualenv --version
 ```
 If that gives you some number (e.g. 16.3.0), that means that you have the software installed. Good job. 
 
-Now cd to your Documents (or Desktop, if you prefer to store your work there), and make a folder to hold the projects that you will do in this class. I'm going to call mine pythonland, but you feel free to come up with a better name. 
+3. cd to your Documents (or Desktop, if you prefer to store your work there), and make a folder to hold the projects that you will do in this class. I'm going to call mine pythonland, but you feel free to come up with a better name. 
 
 ```bash
 cd Documents
 mkdir pythonland
 cd pythonland
 ```
-Inside pythonland (or your project folder), create a virtual environment, aka a copy of your python installation. I'll call mind february_projects. Again, call yours what you want. 
+4. Inside pythonland (or your project folder), create a virtual environment, aka a copy of your python installation. I'll call mind february_projects. Again, call yours what you want. 
 If you don't give it a name and just type virtualenv, it will copy all the python files into the current directory (i.e. pythonland). 
 
 ```bash
