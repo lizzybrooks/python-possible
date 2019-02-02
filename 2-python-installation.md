@@ -25,6 +25,12 @@ Once Homebrew is done, you can use it to install Python and a number of other ex
 brew install python3
 ```
 
+NOTE: If you think you may already have Python installed, you can run this command to check:
+
+```bash
+python --version
+```
+
 ### Add a script extension to your favorite text editor 
 
 Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. 
