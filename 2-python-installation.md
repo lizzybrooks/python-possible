@@ -89,11 +89,21 @@ To execute Python code you run the python command with a text file as an argumen
 
 To start, let's make a simple program that prints a message on the terminal. To do this we will use the print command.
 
-Inside your virtual environment, aka your python project folder, create a new file called hello.py and put this in it:
+cd to your virtual environment, aka your python project folder: 
+
+```bash
+cd Documents/pythonland/february_projects
+```
+
+Use the `cat >` command to create a new file called hello.py put this in it:
 
 ```python
+cat > hello.py
+
 print("Hello Python, nice to meet you.")
 ```
+`Control D` to save your new file and get back to your $ prompt. 
+
 Open your terminal and navigate to the directory where the file is saved, and then type:
 
 ```
@@ -101,18 +111,23 @@ python hello.py
 ```
 You should see "Hello Python, nice to meet you." printed on the screen.
 
-Now add some math to hello.py and save the file:
+Now add some math to hello.py. Use `cat >>` to add to the hello.py file
 
 ```python
+cat >> hello.py
+
 print(1+1)
 print(10/2)
 print(100 * 6.2 - 70/3.5)
 ```
-If you run the file again, you should see answers:
+And run the file again:
 ```
 python hello.py
 ```
-Editing a text file and running it through the command line is a perfectly good way to use Python, but it would be nice to run these scripts right inside your text editor. 
+Hopefully you see your hello python message and the answers to your math problems.
+
+Editing a text file and running it through the command line is a perfectly good way to use Python, but it would be nice to edit and run these scripts inside your text editor. Keep going to learn how... 
+
 
 ## Add a script extension to your favorite text editor or install an IDE 
 
@@ -131,7 +146,7 @@ Unlike JavaScript, which runs when you load your website into a browser, a pytho
 
 Once you have your development environment set up, add your project folder to your editor or IDE (in Atom, go to File --> Add Project Folder). 
 
-Open your hello.py file and run it. If you're using the Script package in Atom, you run with `COMMAND i`. 
+Open your hello.py file in the editor. You should see the code that you typed via the command line. Now run the code in your editor or IDE. If you're using the Script package in Atom, you run with `COMMAND i`. 
 You should see your output in a console in the bottom of the editor. 
 
-### Congratulations. Take a break. 
+### Congratulations. Take a break. You deserve it. 
