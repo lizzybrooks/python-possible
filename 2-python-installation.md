@@ -83,12 +83,41 @@ Okay. Now you should see a folder called february_projects (or whatever you call
 
 ## Run Python from the command line
 
+Python is a command line application, just like `cat`, `grep` and `sort`.
 
+To execute Python code you run the python command with a text file as an argument.
 
-## Add a script extension to your favorite text editor 
+To start, let's make a simple program that prints a message on the terminal. To do this we will use the print command.
 
-Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. 
-I will update this list with links to good script packages. 
+Inside your virtual environment, aka your python project folder, create a new file called hello.py and put this in it:
+
+```python
+print("Hello Python, nice to meet you.")
+```
+Open your terminal and navigate to the directory where the file is saved, and then type:
+
+```
+python hello.py
+```
+You should see "Hello Python, nice to meet you." printed on the screen.
+
+Now add some math to hello.py and save the file:
+
+```python
+print(1+1)
+print(10/2)
+print(100 * 6.2 - 70/3.5)
+```
+If you run the file again, you should see answers:
+```
+python hello.py
+```
+Editing a text file and running it through the command line is a perfectly good way to use Python, but it would be nice to run these scripts right inside your text editor. 
+
+## Add a script extension to your favorite text editor or install an IDE 
+
+Unlike JavaScript, which runs when you load your website into a browser, a python script needs to be told "go". You can install an extension in your editor that will let you run your python code. Or you can use an IDE (integrated development environment), which will usually have something like a play button to run your code. 
+
 
 * Atom : Go to Atom --> Preferences --> Packages and search for **Script**. 
   * You might also want a Python autocomplete package. [Here's a good one](https://atom.io/packages/autocomplete-python). 
@@ -98,3 +127,11 @@ I will update this list with links to good script packages.
   * Install the [Python Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python), which essentially makes your text editor into an IDE (I think). 
   * Install [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
+* [PyCharm](https://www.jetbrains.com/pycharm/) is a nice IDE. The free community version is good. 
+
+Once you have your development environment set up, add your project folder to your editor or IDE (in Atom, go to File --> Add Project Folder). 
+
+Open your hello.py file and run it. If you're using the Script package in Atom, you run with `COMMAND i`. 
+You should see your output in a console in the bottom of the editor. 
+
+### Congratulations. Take a break. 
