@@ -12,6 +12,47 @@ Run this script in your editor (in Atom, `COMMAND i`).
 
 You should see "Hello Python, nice to meet you." printed on the screen.
 
+## Coding in Python is just like coding in JavaScript or any other language. You've got... 
+
+### Variables
+
+You can store the value of expressions inside named variables using the `=` symbol.
+
+```python
+x = 2
+y = 5
+z = x + y
+print(x * 100)
+print(z)
+```
+Store your name as a variable and print it to the screen. 
+
+### Expressions: Use Python to do some math
+
+An "expression" is a set of instructions for the computer to execute. Python will read or evaluate your expressions and return a result. For example you can add numbers:
+
+```python
+print(1+1)
+print(10/2)
+print(100 * 6.2 - 70/3.5)
+```
+
+You can also test to see how different expressions relate to each other. 
+
+`==` tests for equality  
+`<` less than  
+`>` greater than  
+`<=` less than or equal  
+`>=` greater than or equal  
+
+```python
+print(1 == 1)
+print(1 == 2)
+print(1 < 2)
+print(5 * 20 >= 100/13)
+```
+All of these expressions will evaluate to either a `True` or a `False`
+
 
 
 1) For Loops
