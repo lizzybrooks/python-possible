@@ -223,7 +223,15 @@ titlecase_sentence = sentence.title()
 stripped = sentence.strip()
 
 # replace one set of characters with another
-goodby_sentence = sentence.replace("SHADOWS", "SWEATSHIRT")
+less_poetic_sentence = sentence.replace("SHADOWS", "SWEATSHIRT")
+```
+20. Print those results if you haven't already: 
+
+```
+print(lowercase_sentence)
+print(titlecase_sentence)
+print(stripped)
+print(less_poetic_sentence)
 ```
 
 Here's a full list of things you can do to strings: [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
@@ -232,33 +240,50 @@ Here's a full list of things you can do to strings: [https://docs.python.org/3.7
 
 A list is a numerically ordered collection of values, also known as an array.
 
+21. Make an empty list: 
+
 ```python
 # make an empty list
-my_list = []
+dreams = []
+```
 
+22. Add something to the list: 
+
+```
 # add something to our list with the "append" method
-my_list.append("hi") # the list will now look like this: ["hi"]
+dreams.append("flying dream") # the list will now look like this: ["flying dream"]
+```
 
+23. Add more things to the list: 
+
+```
 # add some more stuff
-my_list.append(45)
-my_list.append(100.2)
-my_list.append("whatever")
+dreams.append("forgot something")
+dreams.append("saw a friend from a long time ago")
+dreams.append(100)
+dreams.append("whatever")
+```
 
-# now our list will look like this:
-# ["hi", 45, 100.2, "whatever"]
+24. Print that to make sure it looks right: 
+```
+print(dreams)
+# ['flying dream', 'forgot something', 'saw a friend from a long time ago', 100, 'whatever']
+```
 
+25. Do all this stuff to your list: 
+```
 # get the length of a list
-len(my_list)
+len(dreams)
 
 # you can access individual items in the list by referrring to their index value
-print my_list[0] # prints "hi"
-print my_list[2] # prints 100.2
+print dreams[0] # prints "flying dream"
+print dreams[2] # prints "saw a friend from a long time ago"
 
 # use negative numbers to start at the back
-print my_list[-1] # prints "6" - the last item
+print dreams[-1] # prints whatever - the last item
 
 # you can access part of a list with a ":"
-my_list[1:3] # will be [45, 100.2, "whatever"]
+print(dreams[1:4])
 ```
 
 You can iterate through every value in a list with the `for` keyword:
