@@ -137,7 +137,9 @@ print(first_name + " " + last_name)
 Notice that you can add a space by putting quotes around an empty space. 
 
 -----
-#### Speaking of space, let's get rid of all the code you wrote so far. Highlight everything in your file and delete it. From now on, paste each code snippet over the previous one so you don't get a million lines of repetitive code. 
+#### Speaking of space, let's get rid of all the code you wrote so far. Highlight everything in your file and delete it. From now on, delete each code snippet before typing a new one. That way you don't get a million lines of repetitive code.
+
+#### Also, in case you haven't noticed, Python code is a lot closer to English than other languages you might have used. Instead of copying and pasting, you should be typing your code out by hand. It's a better way! 
 
 Moving on... 
 
