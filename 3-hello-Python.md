@@ -160,6 +160,8 @@ print(second_letter)
 
 The character index begins with the number 0. If you wish to access the last character, you use `-1`. The second to last, `-2` and so on.
 
+14. Get the last letter of your person's name: 
+
 ```python
 name = "Cardi B"
 last_letter = name[-1]
@@ -168,6 +170,7 @@ print(last_letter)
 
 You can also get a range of characters in a string by entering a starting and ending index in your square brackets:
 
+15. Get the first three letters of your person's name (feel free to use a different person if you're getting bored): 
 
 ```python
 name = "Cardi B"
@@ -177,11 +180,15 @@ print(first_three_letters)
 
 To get the total length of a string, use the `len()` function.
 
+16. Try it. How long is a word you're curious about?
+
 ```python
-print(len("hello!"))
+print(len("California"))
 ```
 
 You can also determine if a string exists within another string with the `in` keyword.
+
+17. Check to see if a word is inside a song lyric (obviously this will become more powerful when you aren't writing the lyric out by hand, but be patient with this learning process):
 
 ```python
 sentence = "I do what I like, I do, I do"
@@ -191,20 +198,20 @@ print("boss" in sentence)
 
 #### String methods
 
-Python's string implementation comes with many useful methods that allow you to transform and get information about strings.
+Python has a lot of powerful tools for messing with text. We are going to spend time here, so let's dive into what we can do with strings. 
 
-For example, to make a string uppercase:
+18. Make a string uppercase:
 
 ```python
-sentence = "hello there!"
+sentence = "Now here's a little story I've got to tell About three bad brothers you know so well!"
 uppercase = sentence.upper()
 print(uppercase)
 ```
 
-Here are a few more examples of things that you can do
+19. Choose a lyric that you want to play with and do these things to it: 
 
 ```python
-sentence = "   HELLO THERE   "
+sentence = "   I STILL SEE YOUR SHADOWS IN MY ROOM   "
 
 # make it uppercase
 lowercase_sentence = sentence.lower()
@@ -216,10 +223,10 @@ titlecase_sentence = sentence.title()
 stripped = sentence.strip()
 
 # replace one set of characters with another
-goodby_sentence = sentence.replace("HELLO", "GOODBYE")
+goodby_sentence = sentence.replace("SHADOWS", "SWEATSHIRT")
 ```
 
-Here's a full list: [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
+Here's a full list of things you can do to strings: [https://docs.python.org/3.7/library/stdtypes.html#string-methods](https://docs.python.org/3.7/library/stdtypes.html#string-methods)
 
 ### Lists
 
