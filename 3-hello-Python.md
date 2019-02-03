@@ -136,9 +136,7 @@ print(first_name + " " + last_name)
 ```
 Notice that you can add a space by putting quotes around an empty space. 
 
-##### Speaking of space, let's get rid of all the code you wrote so far.
-##### Highlight everything in your file and delete it.
-##### From now on, paste each code snippet over the previous one so you don't get a million lines of repetitive code. 
+#### Speaking of space, let's get rid of all the code you wrote so far. Highlight everything in your file and delete it. From now on, paste each code snippet over the previous one so you don't get a million lines of repetitive code. 
 
 Moving on... 
 Each character in a string is indexed numerically, and can access individual characters using `[]` square brackets. 
