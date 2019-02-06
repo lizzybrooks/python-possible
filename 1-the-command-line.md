@@ -302,7 +302,7 @@ On Windows it's **`del`**
 del bad_selfie.jpg
 ```
 
-Please note, `rm` will **not** ask for confirmation, and it will not move files to the trash. It'll just delete them immediately, so be careful.
+Please note, `rm` and `del` will **not** ask for confirmation, and will not move files to the trash. It'll just delete them immediately, so be careful.
 
 
 **`more`** is like `cat` but will paginate the output if it is larger than the size of your terminal window:
@@ -312,7 +312,7 @@ more mobydick.txt
 ```
 (now use the up and down arrows to go up or down by a line, the space to go down by a page and `q` to exit if needed)
 
-**`file`** provides basic info about a file:
+**`file`** provides basic info about a file (mac only):
 
 ```bash
 file mysteryfile.what
@@ -330,13 +330,16 @@ command_name [options] arguments
 
 ("arguments" refers to the file or files your are running the command with)
 
-For example, the `sort` command outputs in ascending order by default, but you can have it use reverse order with the `-r` option, like so:
+For example, the `sort` command outputs in ascending order by default, but you can have it use reverse order with the `-r` option on Mac or `/r` on Windows, like so:
 
 ```bash
 sort -r LucidDreams.txt
 ```
+```bash
+sort /r LucidDreams.txt
+```
 
-You can also tell `sort` to only output unique lines (ie, to remove any duplicate lines) with the `-u` option:
+You can also tell `sort` to only output unique lines (ie, to remove any duplicate lines) with the `-u` option (mac only):
 
 ```bash
 sort -u LucidDreams.txt
@@ -347,6 +350,7 @@ Finally you can combine options:
 ```bash
 sort -u -r LucidDreams.txt
 ```
+Mac has more built-in sort options. You can see what Windows does [here](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/sort)
 
 Sometimes, options have parameters. For example, the `cut` command cuts out portions of each line of a file. To use it you must specify a delimiter character with the `-d` option and field number to extract with the `-f` option.  To get the first word of every line in Lucid Dreams I might enter:
 
@@ -354,14 +358,15 @@ Sometimes, options have parameters. For example, the `cut` command cuts out port
 cut -d " " -f 1 LucidDreams.txt
 ```
 
-To see all the options and view a manual for any command, use the `man` tool (short for "manual")
-
+To see all the options and view a manual for any command, on Mac: use the `man` tool (short for "manual"), on Windows, `help`.
+Use the arrow keys to navigate, and `q` to exit.
 ```bash
 man cut
 ```
-
-Use the arrow keys to navigate, and `q` to exit.
-
+`cut` doesn't exist in the Windows command line, so let's look at `find`
+```bash
+man cut
+```
 
 ## The Structure of the Filesytem
 
@@ -389,19 +394,19 @@ For example the absolute path to `lovewilltearyouapart.txt` in the above filesys
 more /Users/lizzy/Desktop/lovewilltearyouapart.txt
 ```
 
-There are a few shortcuts for dealing paths as well. 
+On Mac, there are a few shortcuts for dealing paths as well.
 
 `.` (single dot) or './' (single dot with slash) means the current folder that I am in.
 
 `..` (two dots) or `../` (two dots with slash) means the parent folder. For example, if am in my Desktop folder and I want to list the contents of my Downloads folder I could type:
-
+MAC
 ```bash
 ls ../Downloads/
 ``` 
 
 ## Wildcards
 
-It's also possible to reference multiple files using the `*` character in combination with other characters. This can be really useful in a lot of situations.
+On Mac, it's also possible to reference multiple files using the `*` character in combination with other characters. This can be really useful in a lot of situations.
 
 For example, can list all files that begin with the word "the" like so:
 
