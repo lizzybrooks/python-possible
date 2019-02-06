@@ -72,9 +72,11 @@ Show name of current directory and full path.
 ###### Path means the route that your computer will take to reach a particular file. To the computer, this is a "string" of text that it will follow to find your file. 
 ###### Fun fact: pwd stands for print working directory. 
 
+MAC
 ```
 pwd
 ```
+WINDOWS: plain old `cd` will print your working directory. 
 
 Go up one
 
@@ -82,10 +84,15 @@ Go up one
 cd ..
 ```
 
+MAC
 If you type `cd` without a folder name after, it takes you back to your home folder.
-
 ```
 cd
+```
+WINDOWS
+If you type `cd\` without a folder name after, it takes you back to your home folder.
+```
+cd\
 ```
 
 Now go to desktop
@@ -106,18 +113,24 @@ Get yourself into cool_project:
 cd desktop/cool_project
 ```
 
+on MAC
 **`cat`** stands for "concatenate" and it shows you the contents of a file. 
-
 ```bash
 cat frozenlyrics.txt
 ```
+on WINDOWS
+**`type`** shows you the contents of a file. 
+```bash
+type frozenlyrics.txt
+```
 
-Maybe you don't have a file called frozenlyrics.txt inside your cool_project folder. Don't worry. You can use **`cat >`** to make one. Call it whatever you want. 
+Maybe you don't have a file called frozenlyrics.txt inside your cool_project folder. Don't worry. 
 
+on MAC
+You can use **`cat >`** to make one. Call it whatever you want. 
 ```
 cat > frozenlyrics.txt
 ```
-
 When you push enter this time, you don't go back to the prompt. You get a cursor. You can now add text to your file.
 Type some song lyrics that you like, or write down what you ate for breakfast.
 
@@ -134,13 +147,24 @@ Now get out of there and save your file.
 ```
 CONTROL D. 
 ```
-Go check to see if your file is there. 
 
-Open your file using the default application (mac only)
+on WINDOWS
+You can use **`type nul >`** to make a new file. Call it whatever you want. 
+```
+type nul > frozenlyrics.txt
+```
+Use the echo command and save it to your text file:
+```
+echo The snow glows white on the mountain tonight > frozenlyrics.txt
+```
 
+Check to see if your file is there. 
+
+Mac: Open your file using the default application
 ```
 open FILENAME
 ```
+Windows: cd into your folder and type your filename. Push enter.
 
 Open the current directory in the Finder (mac only)
 (the ```.``` means "here")
@@ -150,30 +174,42 @@ open .
 ```
 
 Print the contents of a file to the screen
-
+MAC
 ```
 cat FILENAME
 ```
-
-Say the contents of the file
+WINDOWS
+```
+type FILENAME
+```
+Say the contents of the file (Mac only)
 
 ```
 cat frozenlyrics.txt | say -v Karen
 ```
 
-Maybe you just remembered some more lyrics that you need to add. `cat >>` will append or add text to the end of your file.
-
+Maybe you just remembered some more lyrics that you need to add. `cat >>` (mac) or `echo >>` (windows) will append or add text to the end of your file.
+MAC
 ```
 cat >>frozenlyrics.txt
 
 The wind is howling like this swirling storm inside
 Couldn't keep it in, heaven knows I've tried
 ```
+WINDOWS
+```
+echo The wind is howling like this swirling storm inside >> frozenlyrics.txt
+```
 
-**`mv`** stands for "move". It lets you move files and folders and also rename them. To rename a file. Rename your file. 
+On Mac **`mv`** stands for "move". On Windows it's just `move`. It lets you move files and folders. 
+
+On Mac you can also rename them: 
 
 ```bash
 mv frozenlyrics.txt Frozen_Lyrics.txt
+```
+``
+move frozenlyrics.txt Documents\frozenlyrics.txt
 ```
 
 **`cp`** stands for "copy". It lets you duplicate files. Make a copy of your file. 
