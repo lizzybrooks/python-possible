@@ -95,7 +95,7 @@ cd to your virtual environment, aka your python project folder:
 cd Documents/pythonland/february_projects
 ```
 
-Use the `cat >` command to create a new file called hello.py put this in it:
+Use the `cat >` or `type nul >` command to create a new file called hello.py put this in it:
 
 ```python
 cat > hello.py
@@ -104,14 +104,19 @@ print("Hello Python, nice to meet you.")
 ```
 `Control D` to save your new file and get back to your $ prompt. 
 
-Open your terminal and navigate to the directory where the file is saved, and then type:
+```
+type nul > hello.py
+echo print("Hello Python, nice to meet you.") > hello.py
+```
+
+Navigate (`cd`) to the directory where the file is saved, and then type:
 
 ```
 python hello.py
 ```
 You should see "Hello Python, nice to meet you." printed on the screen.
 
-Now add some math to hello.py. Use `cat >>` to add to the hello.py file
+Now add some math to hello.py. Use `cat >>` or `echo >>` to add to the hello.py file
 
 ```python
 cat >> hello.py
@@ -120,6 +125,10 @@ print(1+1)
 print(10/2)
 print(100 * 6.2 - 70/3.5)
 ```
+```
+echo print(1+1) >> hello.py
+```
+
 And run the file again:
 ```
 python hello.py
