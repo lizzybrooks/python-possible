@@ -3,8 +3,8 @@
 There are two versions of Python, Python 2 and Python 3. For this class we will be using Python 3, which you will need to install on your computer. 
 
 ## Windows
-I will figure this out soon using [this guide](https://docs.python-guide.org/starting/install3/win/)
-
+Follow [this guide](https://docs.python-guide.org/starting/install3/win/).
+If you have trouble, install [Anaconda](https://www.anaconda.com/distribution/#windows)
 
 
 ## Mac
