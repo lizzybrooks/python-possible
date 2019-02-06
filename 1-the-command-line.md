@@ -22,6 +22,12 @@ LizzysComputer:~ lizzy$
 
 This is called the "prompt". By default (on a Mac) it shows the name of the computer, the directory that you are currently in, your username, and then a $ sign.
 
+On Windows, it looks similar. It shows the path and the user, follwed by `<`
+
+```
+C:\\Users\student>
+```
+
 The basic use of the command line is: 1) you type a command, 2) you hit return, and 3) some output of the command is printed to the screen.
 
 ## Basic Navigation & File Operations
@@ -31,7 +37,7 @@ Make the computer say hi to you.
 ```
 echo hi
 ```
-No, actually make the computer say hi.(Make sure your speakers are on for this one). 
+No, actually make the computer say hi. (Make sure your speakers are on for this one). This one doesn't work natively on Windows, sorry. 
 
 ```
 say hi your name! how are you doing today? 
@@ -53,8 +59,13 @@ cd [drag and drop your folder here or type the path]
 
 List contents of current directory 
 
+MAC:
 ```
 ls 
+```
+WINDOWS:
+```
+dir
 ```
 
 Show name of current directory and full path. 
