@@ -6,8 +6,8 @@ The command line is a text-based interface for interacting with your computer. F
 
 On a Mac you can access the command line by opening up the `Terminal` application, located in `/Applications/Utilities/Terminal`
 
-On Windows, you can access the command line by typing Win r.
-You should then check which version of Windows you're running by typing winver (stands for windows version) and push enter. 
+On Windows, you can access the command line by typing `Win r`.
+You should then check which version of Windows you're running by typing `winver` (stands for windows version) and push enter. 
 
 To get started on Windows you will need to set up the Windows Subsystem for Linux, which allows you to run Ubuntu (a Linux distribution) from within your current Windows 10 installation.  [Follow this guide to do so](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows).
 
