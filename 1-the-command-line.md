@@ -8,8 +8,9 @@ On a Mac you can access the command line by opening up the `Terminal` applicatio
 
 On Windows, you can access the command line by typing `Win r`.
 You should then check which version of Windows you're running by typing `winver` (stands for windows version) and push enter. 
+The commands listed here work for most versions, but Windows does vary slightly version by version, so look things up if they don't work. 
 
-To get started on Windows you will need to set up the Windows Subsystem for Linux, which allows you to run Ubuntu (a Linux distribution) from within your current Windows 10 installation.  [Follow this guide to do so](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows).
+On Windows 10, you have the option to set up the Windows Subsystem for Linux, which allows you to run Ubuntu (a Linux distribution) from within your current Windows 10 installation.  [Follow this guide to do so](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows).
 
 
 ## The Prompt
@@ -22,7 +23,7 @@ LizzysComputer:~ lizzy$
 
 This is called the "prompt". By default (on a Mac) it shows the name of the computer, the directory that you are currently in, your username, and then a $ sign.
 
-On Windows, it looks similar. It shows the path and the user, follwed by `<`
+On Windows, it looks similar. It shows the path and the user, follwed by `>`
 
 ```
 C:\\Users\student>
@@ -164,7 +165,7 @@ Mac: Open your file using the default application
 ```
 open FILENAME
 ```
-Windows: cd into your folder and type your filename. Push enter.
+Windows: `cd` into your folder and type your filename. Push `ENTER`.
 
 Open the current directory in the Finder (mac only)
 (the ```.``` means "here")
@@ -182,6 +183,7 @@ WINDOWS
 ```
 type FILENAME
 ```
+
 Say the contents of the file (Mac only)
 
 ```
@@ -201,28 +203,39 @@ WINDOWS
 echo The wind is howling like this swirling storm inside >> frozenlyrics.txt
 ```
 
-On Mac **`mv`** stands for "move". On Windows it's just `move`. It lets you move files and folders. 
+Move your file around: On Mac **`mv`** stands for "move". On Windows it's just `move`. It lets you move files and folders. 
+```
+mv frozenlyrics.txt Documents\frozenlyrics.txt
+```
+```
+move frozenlyrics.txt Documents\frozenlyrics.txt
+```
 
-On Mac you can also rename them: 
+On Mac, `mv` can also rename a file int the same folder: 
 
 ```bash
 mv frozenlyrics.txt Frozen_Lyrics.txt
 ```
-``
-move frozenlyrics.txt Documents\frozenlyrics.txt
+On Windows, use `ren` to rename:
+```
+ren frozenlyrics.txt Frozen_Lyrics.txt
 ```
 
-**`cp`** stands for "copy". It lets you duplicate files. Make a copy of your file. 
+On Mac, **`cp`** stands for "copy". On Windows, `copy` is "copy". It lets you duplicate files. Make a copy of your file. 
 
 ```bash
 cp Frozen_Lyrics.txt Frozen_Lyrics2.txt
 ```
+```bash
+copy Frozen_Lyrics.txt Frozen_Lyrics2.txt
+```
 
-**`touch`** will make a new empty file. 
+MAC: **`touch`** will make a new empty file. 
 
 ```bash
 touch nothinginhere.txt
 ```
+WINDOWS: You already did that. It's **`type nul`**
 
 **`sort`** sorts a file alphabetically by line and prints the output to the screen
 
@@ -238,15 +251,23 @@ sort LucidDreams.txt > remixedLucidDreams.txt
 
 ```
 
-**`grep`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in Moby Dick containing the word "whale".
+SEARCH A FILE
+MAC: **`grep`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in LucidDreams containing the word "heart".
 
 ```bash
 grep "search term" FILENAME
 
 grep heart LucidDreams.txt
 ```
+WINDOWS: **`findstr`** searches each line of a file for some input, and prints those lines to the screen. For example, the following searches for all lines in LucidDreams containing the word "heart".
 
-You may really need to hear this out loud: 
+```bash
+findstr "search term" FILENAME
+
+findstr heart LucidDreams.txt
+```
+
+You may really need to hear this out loud (mac only): 
 
 ```
 grep "search term" FILENAME | say -v Voice
@@ -271,10 +292,14 @@ grep heart LucidDreams.txt | sort -u > remixed_dreams.txt
 ```
 
 Is it becoming too much??
-**`rm`** stands for "remove". It lets you delete files:
+On Mac **`rm`** stands for "remove". It lets you delete files:
 
 ```bash
 rm bad_selfie.jpg
+```
+On Windows it's **`del`**
+```
+del bad_selfie.jpg
 ```
 
 Please note, `rm` will **not** ask for confirmation, and it will not move files to the trash. It'll just delete them immediately, so be careful.
