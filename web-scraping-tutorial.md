@@ -10,17 +10,18 @@ Markup language means a computer language that defines the structure and appeara
 
 ## Tags
 
+1. Create a new file called index.html and copy and paste the contents of [this starter](https://github.com/lizzybrooks/python-possible/blob/master/templates/index.html) into it. 
+
+2. Open your index.html file with your web browser (aka Chrome or Firefox). 
+
+3. Practice changing the text that displays in your browser (edit your index.html file, save, and refresh). 
+
 HTML works as a series of **tags**
 A tag looks like
 
     \<tagname\>some stuff\</tagname\>
 
 The beginning of the tag, the contents of it, and the closing of a tag
-
-
-1. To see how a tag works, open the index.html template in your text editor and in your browser. 
-(Remember opening the index.html file in your p5 projects? This is the same thing, but we're only using the HTML, not any JavaScript). 
-
 
 There’s different types for different things
 
@@ -34,6 +35,7 @@ There’s different types for different things
 - \<div\> represents a random division of text
   - \<div\>I’m a div\</div\>
 
+4. Add some headers and a link or two to your index.html file.
 
 ## Attributes
 
