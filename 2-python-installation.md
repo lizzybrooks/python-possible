@@ -73,13 +73,13 @@ cd Documents
 mkdir pythonland
 cd pythonland
 ```
-4. Inside pythonland (or your project folder), create a virtual environment, aka a copy of your python installation. I'll call mind february_projects. Again, call yours what you want. 
+4. Inside pythonland (or your project folder), create a virtual environment, aka a copy of your python installation. I'll call mine first_env. Again, call yours what you want. 
 If you don't give it a name and just type virtualenv, it will copy all the python files into the current directory (i.e. pythonland). 
 
 ```bash
-virtualenv february_projects
+virtualenv first_env
 ```
-Okay. Now you should see a folder called february_projects (or whatever you called yours) that holds a lot of Python files. I hope it worked!
+Okay. Now you should see a folder called first_env (or whatever you called yours) that holds a lot of Python files. I hope it worked!
 
 ## Activate Your Virtual Environment
 
@@ -93,15 +93,15 @@ cd Documents/pythonland
 ```
 Type the name of your virtual environment, followed by \Scripts\activate: 
 ```
-february_projects\Scripts\activate
+first_env\Scripts\activate
 ```
 The computer will run a script to activate your environment and now you should see the name of your virtual environment at the front of your command prompt like this:
 ```
-(february_projects) C:\Users\student\Documents\pythonland>
+(first_env) C:\Users\student\Documents\pythonland>
 ```
 Now all the python code you run will use the special installation that you created in that space. When you want to deactivate it, just type `deactivate`
 ```
-(february_projects) C:\Users\student\Documents\pythonland>deactivate
+(first_env) C:\Users\student\Documents\pythonland>deactivate
 ```
 
 ## Run Python from the command line
@@ -112,10 +112,10 @@ To execute Python code you run the python command with a text file as an argumen
 
 To start, let's make a simple program that prints a message on the terminal. To do this we will use the print command.
 
-cd to your virtual environment, aka your python project folder: 
+cd to the folder that will hold your python work for this class: 
 
 ```bash
-cd Documents/pythonland/february_projects
+cd Documents/pythonland
 ```
 
 Use the `cat >` or `type nul >` command to create a new file called hello.py put this in it:
