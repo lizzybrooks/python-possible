@@ -81,6 +81,29 @@ virtualenv february_projects
 ```
 Okay. Now you should see a folder called february_projects (or whatever you called yours) that holds a lot of Python files. I hope it worked!
 
+## Activate Your Virtual Environment
+
+Okay. You made a copy of your entire python installation in an isolated environment so you can add different modular pieces to it that conflict with one another. 
+
+The last thing you need to do is activate that environment, AKA turn it on, so you're no longer coding in your defaul installation of python, but you're coding in your special isolated virtual environment. 
+
+5. Navigate to the folder holding your virtual environment:
+```
+cd Documents/pythonland
+```
+Type the name of your virtual environment, followed by \Scripts\activate: 
+```
+february_projects\Scripts\activate
+```
+The computer will run a script to activate your environment and now you should see the name of your virtual environment at the front of your command prompt like this:
+```
+(february_projects) C:\Users\student\Documents\pythonland>
+```
+Now all the python code you run will use the special installation that you created in that space. When you want to deactivate it, just type `deactivate`
+```
+(february_projects) C:\Users\student\Documents\pythonland>deactivate
+```
+
 ## Run Python from the command line
 
 Python is a command line application, just like `cat`, `grep` and `sort`.
