@@ -434,14 +434,17 @@ It can take a while to get used to the command line, but there are a few tips an
 
 * Use the up and down arrows to view a history of the commands you have entered. 
 * Hit the tab key to autocomplete commands and file paths
-* Type `open` and then a filename to open the file in its default program
+    * If nothing comes up, that could mean there are multiple possible completions, and it doesn't know which one you want. Press tab again to see all suggestions
+* Type `open` and then a filename to open the file in its default program (Mac only)
 * Drag a folder or file onto the terminal to fill in its absolute path
 * Type ctrl-a to move your cursor to the beginning of the line, and ctrl-e to the end
+* (for Windows and Linux) For most normal shortcuts (e.g. copy and paste) that use Ctrl, you need to add the shift key. For instance, copy is Ctrl-Shift-C and paste is Ctrl-Shift-V.
+* Press ctrl-R and type something to search your history for a command you have run previously
 
 ## Further fun
 
 There are lots of programs that you can run through the command line interface, so feel free to explore and try things out.
 
-There's a software called youtube-gl that allows you to download any video from youtube.You can use that in combination with a command line video editor called ffmpeg to do some really cool stuff. [Here's a tutorial to get you started with that.](https://github.com/antiboredom/automating-video-itp/blob/master/FFMPEG.md)
+There's a software called youtube-dl that allows you to download any video from youtube.You can use that in combination with a command line video editor called ffmpeg to do some really cool stuff. [Here's a tutorial to get you started with that.](https://github.com/antiboredom/automating-video-itp/blob/master/FFMPEG.md)
 
 Congratulations on your new knowledge. Remember, it's just the beginning. If you want to explore more of what the command line can do, [here is a good, thorough tutorial](https://www.learnenough.com/command-line-tutorial/basics). 
