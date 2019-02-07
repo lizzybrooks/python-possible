@@ -3,17 +3,24 @@
 
 # Intro to HTML
 
-HTML is a markup language, that the web is written in.
+HTML is a markup language, that the web is written in. 
+HTML literally stands for hyper text markup language. 
+Markup language means a computer language that defines the structure and appearance of raw text. 
 
 
 ## Tags
 
-Works as a series of **tags**
+HTML works as a series of **tags**
 A tag looks like
 
     \<tagname\>some stuff\</tagname\>
 
 The beginning of the tag, the contents of it, and the closing of a tag
+
+
+1. To see how a tag works, open the index.html template in your text editor and in your browser. 
+(Remember opening the index.html file in your p5 projects? This is the same thing, but we're only using the HTML, not any JavaScript). 
+
 
 There’s different types for different things
 
