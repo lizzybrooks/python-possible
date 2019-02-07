@@ -1,6 +1,5 @@
 
 # Scraping the Web 
-________________
 
 # Intro to HTML
 
