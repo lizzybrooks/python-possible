@@ -305,10 +305,10 @@ del bad_selfie.jpg
 Please note, `rm` and `del` will **not** ask for confirmation, and will not move files to the trash. It'll just delete them immediately, so be careful.
 
 
-**`more`** is like `cat` but will paginate the output if it is larger than the size of your terminal window:
+**`less`** is like `cat` but will paginate the output if it is larger than the size of your terminal window:
 
 ```bash
-more mobydick.txt
+less mobydick.txt
 ```
 (now use the up and down arrows to go up or down by a line, the space to go down by a page and `q` to exit if needed)
 
@@ -391,7 +391,7 @@ Each file and folder has a unique location on the filesystem. This location is c
 For example the absolute path to `lovewilltearyouapart.txt` in the above filesystem is `/Users/lizzy/Desktop/lovewilltearyouapart.txt`. I can look inside the contents of this file, from any working directory, with this command:
 
 ```bash
-more /Users/lizzy/Desktop/lovewilltearyouapart.txt
+less /Users/lizzy/Desktop/lovewilltearyouapart.txt
 ```
 
 On Mac, there are a few shortcuts for dealing paths as well.
@@ -440,11 +440,14 @@ It can take a while to get used to the command line, but there are a few tips an
 * Type ctrl-a to move your cursor to the beginning of the line, and ctrl-e to the end
 * (for Windows and Linux) For most normal shortcuts (e.g. copy and paste) that use Ctrl, you need to add the shift key. For instance, copy is Ctrl-Shift-C and paste is Ctrl-Shift-V.
 * Press ctrl-R and type something to search your history for a command you have run previously
+* If a filename contains spaces or parentheses, you need to surround it with single or double quotes. If its name contains single or double quotes, escape those with a backslash. For instance, if the name of the file is `things that make you say "that's cool"`, you could type `"things that make you say \"that\'s cool\""`. If the name contains a dollar sign, you need to use single quotes.
 
 ## Further fun
 
 There are lots of programs that you can run through the command line interface, so feel free to explore and try things out.
 
 There's a software called youtube-dl that allows you to download any video from youtube.You can use that in combination with a command line video editor called ffmpeg to do some really cool stuff. [Here's a tutorial to get you started with that.](https://github.com/antiboredom/automating-video-itp/blob/master/FFMPEG.md)
+
+Another fun thing to run is `telnet towel.blinkenlights.nl`. I won't spoil what it does (it is school appropriate). To exit, press Ctrl+] (right square bracket) and then Ctrl+D.
 
 Congratulations on your new knowledge. Remember, it's just the beginning. If you want to explore more of what the command line can do, [here is a good, thorough tutorial](https://www.learnenough.com/command-line-tutorial/basics). 
