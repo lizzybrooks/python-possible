@@ -333,3 +333,8 @@ for line in all_lines:
 	print(line[0:5])
 ```
 
+## Day 1 Beyond the Basics
+
+Once you've completed the above exercises, you have two options: 
+
+1. 
