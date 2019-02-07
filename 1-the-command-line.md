@@ -448,6 +448,13 @@ There are lots of programs that you can run through the command line interface, 
 
 There's a software called youtube-dl that allows you to download any video from youtube.You can use that in combination with a command line video editor called ffmpeg to do some really cool stuff. [Here's a tutorial to get you started with that.](https://github.com/antiboredom/automating-video-itp/blob/master/FFMPEG.md)
 
-Another fun thing to run is `telnet towel.blinkenlights.nl`. I won't spoil what it does (it is school appropriate). To exit, press Ctrl+] (right square bracket) and then Ctrl+D.
+Another fun thing to run is `telnet towel.blinkenlights.nl`. I won't spoil what it does (it is school appropriate). To exit, press Ctrl+] (right square bracket) and then Ctrl+D. For this to work on a Mac running High Sierra or later, you will need to manually install `telnet`:
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install telnet
+```
+
+It will prompt for a password. When you type your password, nothing will be displayed.
 
 Congratulations on your new knowledge. Remember, it's just the beginning. If you want to explore more of what the command line can do, [here is a good, thorough tutorial](https://www.learnenough.com/command-line-tutorial/basics). 
