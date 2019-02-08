@@ -340,6 +340,241 @@ for line in all_lines:
 
 ## Day 1 Beyond the Basics
 
-Once you've completed the above exercises, you have two options: 
 
-1. 
+We’ll grab Kafka’s Metamorphosis from gutenberg
+https://www.gutenberg.org/cache/epub/5200/pg5200.txt
+
+Save it to a file next to our python script
+
+We’ll read the text file and store it as a variable
+In our python script:
+
+    
+    text = open("kafka.txt").read() # the name of the file, relative to where the script is
+    
+    print(text) # Outputs: the entire text
+    
+    
+
+Now we can do stuff with it
+
+
+    
+    print(text.upper())
+    
+
+
+To read every single lines, Instead of read() we use readlines()
+
+    
+    text = open("kafka.txt").readlines()
+    # text is now a list of string items, with each line from the file
+    
+
+Now we can iterate over the lines
+
+
+    
+    for line in text:
+      print(line) #Outputs each line
+      
+
+The problem, it’s putting a space in between each line.
+This is because there’s an extra character after a line break, called a newline character
+We can get rid of that with strip()
+
+
+    
+    for line in text:
+      line = line.strip()
+      print(line) # Outputs each line without whitespace or extra line breaks
+      
+
+
+Each of the lines is a string, so we can print parts of each line
+
+
+    
+    for line in text:
+      line = line.strip()
+      print(line[0:4])
+    
+    # Output is the first four characters of each line
+    
+
+Or do fun stuff like replacing
+
+
+    
+    for line in text:
+      line = line.strip()
+      print(line.replace('e', 'eeeeeee'))
+      
+
+
+
+## Processing text
+
+We’re gonna use a function called split() to break downs a string according to a delimiter character.
+You can use split() to return a string as a list separated by a character
+You can use join() to join a list back into a string
+
+    
+    for line in text:
+      line = line.strip()
+      words = line.split(" ") # Separates the lines by an empty space, getting a list of words
+      
+      print(words[0]) # Outputs the first word of each sentence
+      
+      # Chain it all together!
+      print(words[0].center(30, '~').upper())
+      
+
+
+We can use the **random** methods to do interesting stuff
+
+Sometimes you have to tell python to add **modules** with the **import** keyword to add functionality you need. Here we’ll import the [random module](https://docs.python.org/3.5/library/random.html). 
+
+- Use the documentation to find what you can do with a module
+- Make sure you’re seeing the documentation of the python version you’re using (e.g. 3.5)
+    # Import the module
+    import random
+    
+    text = open("kafka.txt").readlines()
+    
+    for line in text:
+      line = line.strip()
+      words = line.split(" ")
+      
+      random_word = random.choice(words)  #Get a random item from the word list
+      
+      random.shuffle(words) # Randomizes the order of the items in the list
+    
+
+
+We use the join() method to join the randomized word list in to a string
+
+    
+    
+    for line in text:
+      line = line.strip()
+      words = line.split(" ")
+      random.shuffle(words)
+      
+      new_line = " ".join(words) # Joins each element in the list by sticking the space character in between the words, outputs a string
+      
+
+
+We can sort with sorted()
+
+
+    
+    for line in text:
+      line = line.strip()
+      words = line.split(" ")
+      random.shuffle(words)
+      
+      words = sorted(words) # Sort the words list alphabetically
+      
+      new_line = " ".join(words)
+      
+
+
+Final script
+
+    # Import the module
+    import random
+    
+    text = open("kafka.txt").readlines()
+    for line in text:
+      line = line.strip()
+      words = line.split(" ")
+      random.shuffle(words)
+      words = sorted(words)
+      new_line = " ".join(words)
+      print(new_line)
+
+
+## List comprehension
+
+Make a new file comps.py
+
+
+We can make a list of upper case’d items
+
+    names = ["Trotsky", "Marx", "Lenin", "Engels"]
+    
+    uppercase_names = []
+    for name in names:
+      uppercase_names.append(name.upper())
+    
+    
+
+There’s a handier way of doing this in python, called **list comprehension.**
+This does the same thing as the example above
+
+    names = ["Trotsky", "Marx", "Lenin", "Engels"]
+    
+    uppercase_names = [name.upper() for name in names]
+    
+
+It’s saying: for every value in the list **names** temporarily store it as a variable **name**, make that upper case and store it in a new list called **uppercase_names**
+
+
+    
+    names = [name.replace('r', 'arrrrr') for name in names]
+    
+
+We can filter too, by adding **if statements** inside too:
+
+    
+    names = [name for name in names if name[0] == "l"]
+    # returns elements inside of the list whose first letter is l
+    
+
+
+We can add this filtering technique to the words in our previous example
+
+    import random
+    
+    text = open("kafka.txt").readlines()
+    for line in text:
+      line = line.strip()
+      words = line.split(" ")
+    
+      words = [word for word in words if word.startswith("a")]
+    
+      new_line = " ".join(words)
+        
+      print(new_line)
+      # prints all the words that start with a  
+
+OR more:
+
+      words = [word for word in words if len(word) > 5
+      # all the words that have 5 or more characters in them
+
+
+      words = [word for word in words if word.endswith("ing")]
+      # all the words that end in ing
+
+
+
+# Creative Assignment 
+
+Transform a non-poetic text into a poetic text
+
+- up to you to determine what’s poetic
+
+Read some file, or if the text is short you can just put that text directly into python as  a variable
+
+if don’t know what to do try stuff like sorting, randomizing, replacing, deleting things
+
+by taking something that exists and using these methods we can reformat it, rework it, you can use whatever is at your disposal. you’re not bound by command line, so you can take the output of that text and you’re welcome to format it into something interesting, put it into p5, whatever you want to do
+
+Take something that exists, do something that transforms it.
+
+If you’re more advanced, you can start to get into using third party libraries to analyze text.
+If you’re feeling ambitious, make this program so that it can deal with any text. Make this poetic operation so it can work with any text that you feed it.
+
+
