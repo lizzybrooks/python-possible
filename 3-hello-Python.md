@@ -1,14 +1,18 @@
 ## Basics
 
-1. To start, add your Virtual Environment folder to your text editor. So, in Atom, go to File --> Add Project Folder, and choose your Virtual Environment. This is where you'll build your project, and it also holds your Python installation and all your dependencies (like libraries). 
+1. To start, cd to the folder where you have your virtual environment, and activate it:
 
-2. In that folder, create a new file called `hello.py` and put this in it:
+```
+your_env\Scripts\activate
+```
+
+2. Create a new file called `hello.py` and put this in it:
 
 ```python
 print("Hello Python, nice to meet you.")
 ```
 
-3. Run this script in your editor (in Atom, `COMMAND i`). 
+3. Run this script in your editor (in Atom, `COMMAND i`), or via the command line `python hello.py`. 
 
 You should see "Hello Python, nice to meet you." printed on the screen.
 
