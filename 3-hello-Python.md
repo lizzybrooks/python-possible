@@ -1,7 +1,7 @@
 ## Basics
 
 1. To start, cd to the folder where you have your virtual environment, and activate it:
-
+This makes sure that you're running the version of python that you've created for this project. 
 ```
 your_env\Scripts\activate
 ```
