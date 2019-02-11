@@ -564,7 +564,10 @@ OR more:
 
 Transform a non-poetic text into a poetic text. Take something that exists, do something that transforms it.
 
+- start with any text that's interesting to you: something you're reading in another class, a work of literature, a political speech, music, poetry, twitter, restaurant menu, etc. 
+
 - up to you to determine what’s poetic
+
 
 Read some file, or if the text is short you can just put that text directly into python as a variable
 
