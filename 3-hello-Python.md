@@ -568,8 +568,10 @@ Transform a non-poetic text into a poetic text. Take something that exists, do s
 
 - up to you to determine what’s poetic
 
+- explore word counts if you're interested
 
-Read some file, or if the text is short you can just put that text directly into python as a variable
+
+Read some file, or if the text is short you can just put that text directly into python as a variable.
 
 If you don’t know what to do try sorting, randomizing, replacing, deleting things. By taking something that exists and using these methods we can reformat it and rework it. You can use whatever is at your disposal. You’re not bound by command line or python, so you can take the output of that text and you’re welcome to format it into something interesting, put it into p5, whatever you want to do.
 
