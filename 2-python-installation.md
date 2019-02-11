@@ -47,7 +47,7 @@ Your virtual environment contains an isolated copy of Python and the packages th
 
 #### If you prefer following written instructions, read on:
 
-1. Install virtualenv. Virtualenv is a tool to create isolated Python environments. It basically creates a folder that's a copy of your Python installation, with everything you need inside. Then you build your Python project inside that folder. 
+1. Install virtualenv. Virtualenv is a tool to create isolated Python environments. It basically creates a folder that's a copy of your Python installation, with everything you need inside. Then you can activate and deactivate different custom installations of Python for different projects you're working on.  
 
 You install virtualenv via the command line, with this simple line of code: 
 
