@@ -47,7 +47,7 @@ All of these expressions will evaluate to either a `True` or a `False`
 5. Try evaluating a few of your own expressions. Check if 1 == 2, etc.  
 
 ## Python is sort of like a monster calculator. 
-It's great at working with data. So, that's where we'll start. 
+It's great at working with data. So, that's where we'll focus. 
 
 ### Variables
 
