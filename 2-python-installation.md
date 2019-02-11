@@ -95,6 +95,11 @@ Type the name of your virtual environment, followed by \Scripts\activate:
 ```
 first_env\Scripts\activate
 ```
+or try this, replacing venv with the name of your environment:
+```
+source venv/bin/activate
+```
+
 The computer will run a script to activate your environment and now you should see the name of your virtual environment at the front of your command prompt like this:
 ```
 (first_env) C:\Users\student\Documents\pythonland>
