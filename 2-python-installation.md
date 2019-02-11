@@ -1,6 +1,6 @@
 # Python Installation and Creating a Virtual Environment 
 
-There are two versions of Python, Python 2 and Python 3. For this class we will be using Python 3, which you will need to install on your computer. 
+There are two versions of Python: Python 2 and Python 3. For this class we will be using Python 3, which you will need to install on your computer. 
 
 ## Windows
 Follow [this guide](https://docs.python-guide.org/starting/install3/win/).
