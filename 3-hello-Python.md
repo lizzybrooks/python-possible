@@ -1,9 +1,16 @@
 ## Basics
 
-1. To start, cd to the folder where you have your virtual environment, and activate it:
-
+1. To start, turn on your virtual environment: Navigate to the folder holding your virtual environment:
 ```
-your_env\Scripts\activate
+cd Documents/pythonland
+```
+Type the name of your virtual environment, followed by /Scripts/activate: 
+```
+first_env/Scripts/activate
+```
+If that's not working, try this, replacing venv with the name of your environment:
+```
+source venv/bin/activate
 ```
 This makes sure that you're running the version of python that you've created for this project. 
 
