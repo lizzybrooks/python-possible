@@ -30,6 +30,11 @@ NOTE: If you think you may already have Python installed, you can run this comma
 ```bash
 python --version
 ```
+If you see python2.7, try checking for python3:
+```
+python3 --version
+```
+
 
 ## Create a Virtual Environment for your Python Project
 
@@ -91,11 +96,11 @@ The last thing you need to do is activate that environment, AKA turn it on, so y
 ```
 cd Documents/pythonland
 ```
-Type the name of your virtual environment, followed by \Scripts\activate: 
+Type the name of your virtual environment, followed by /Scripts/activate: 
 ```
-first_env\Scripts\activate
+first_env/Scripts/activate
 ```
-or try this, replacing venv with the name of your environment:
+If that's not working, try this, replacing venv with the name of your environment:
 ```
 source venv/bin/activate
 ```
