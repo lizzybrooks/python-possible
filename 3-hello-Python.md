@@ -570,8 +570,8 @@ Read some file, or if the text is short you can just put that text directly into
 
 If you don’t know what to do try sorting, randomizing, replacing, deleting things. By taking something that exists and using these methods we can reformat it and rework it. You can use whatever is at your disposal. You’re not bound by command line or python, so you can take the output of that text and you’re welcome to format it into something interesting, put it into p5, whatever you want to do.
 
+* If you’re more advanced, you can start to get into using third party libraries to analyze text. Look at [TextBlob](https://textblob.readthedocs.io/en/dev/) and [spaCy](https://github.com/aparrish/rwet/blob/master/nlp-concepts-with-spacy.ipynb). 
 
-If you’re more advanced, you can start to get into using third party libraries to analyze text.
-If you’re feeling ambitious, make this program so that it can deal with any text. Make this poetic operation so it can work with any text that you feed it.
+* If you’re feeling ambitious, make this program so that it can deal with any text. Make this poetic operation so it can work with any text that you feed it.
 
 
