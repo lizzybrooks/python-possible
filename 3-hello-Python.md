@@ -1,16 +1,9 @@
 ## Basics
 
-1. To start, turn on your virtual environment: Navigate to the folder holding your virtual environment:
+1. To start, cd to the folder where you have your virtual environment, and activate it:
+
 ```
-cd Documents/pythonland
-```
-Type the name of your virtual environment, followed by /Scripts/activate: 
-```
-first_env/Scripts/activate
-```
-If that's not working, try this, replacing venv with the name of your environment:
-```
-source venv/bin/activate
+your_env\Scripts\activate
 ```
 This makes sure that you're running the version of python that you've created for this project. 
 
@@ -586,4 +579,9 @@ If you don’t know what to do try sorting, randomizing, replacing, deleting thi
 
 * If you’re feeling ambitious, make this program so that it can deal with any text. Make this poetic operation so it can work with any text that you feed it.
 
+# Mathy Assignment
+Ever heard of the fibonacci sequence? It goes (0, 1, 1, 2, 3, 5, 8, 13, 21...) and you predict the next number by adding the previous two. So for the part of the sequence I gave the next would be 13+21 which is 33. Try to write a function that will tell you the Nth number in the fibonacci sequence. 
 
+What happens when you give 34 as the input? what abe 67?
+
+Try to write a faster version of the function. (hint: dictionaries are your friend!)
