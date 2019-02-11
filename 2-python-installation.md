@@ -174,7 +174,7 @@ Unlike JavaScript, which runs when you load your website into a browser, a pytho
   * While you're installing stuff in Atom, you might play around with themes to color the text and background. I like Atom-Material [syntax](https://atom.io/themes/atom-material-syntax) and [UI](https://atom.io/themes/atom-material-ui). 
 
 * [Visual Studio Code](https://code.visualstudio.com/)
-  * Install the [Python Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python), which essentially makes your text editor into an IDE (I think). 
+  * Install the [Python Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). 
   * or install [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 * [PyCharm](https://www.jetbrains.com/pycharm/) is a nice IDE. The free community version is good. 
