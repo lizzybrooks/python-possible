@@ -168,6 +168,8 @@ Unlike JavaScript, which runs when you load your website into a browser, a pytho
 
 * Atom  
   * Install [script](https://atom.io/packages/script)
+  * Then make sure that it's running Python 3: Go to menu Packages --> Script --> Configure Script and type `python3` into the Command space.
+  
   * You might also want a Python autocomplete package. [Here's a good one](https://atom.io/packages/autocomplete-python). 
   * While you're installing stuff in Atom, you might play around with themes to color the text and background. I like Atom-Material [syntax](https://atom.io/themes/atom-material-syntax) and [UI](https://atom.io/themes/atom-material-ui). 
 
