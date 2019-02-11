@@ -158,8 +158,8 @@ python hello.py
 ```
 Hopefully you see your hello python message and the answers to your math problems.
 
-Editing a text file and running it through the command line is a perfectly good way to use Python, but it would be nice to edit and run these scripts inside your text editor. Keep going to learn how... 
-
+Editing a text file and running it through the command line is good way to use Python. You can even install a plugin into most text editors to get a command prompt window in the editor itself. 
+But you might want to edit and run these scripts inside your text editor. Keep going to learn how... 
 
 ## Add a script extension to your favorite text editor or install an IDE 
 
@@ -185,3 +185,4 @@ Open your hello.py file in the editor. You should see the code that you typed vi
 You should see your output in a console in the bottom of the editor. 
 
 ### Congratulations. Take a break. You deserve it. 
+
