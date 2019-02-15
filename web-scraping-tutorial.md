@@ -212,8 +212,13 @@ To scrape a page:
 
 ## Installing the library
 
-You can install libraries in self-contained environments, or globally. 
+You can install libraries in self-contained environments, or globally. To install in your virutal environment, first activate your virtual environment:
 
+```
+cd pythonland
+source first_env/bin/activate
+```
+Then install the library. 
 On the terminal:
 
     $ pip3 install requests-html
