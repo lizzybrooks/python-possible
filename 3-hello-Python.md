@@ -307,14 +307,14 @@ for (var i = 0; i < 3; i++) {
   }
 ```  
   
-In Python, it has a different structure, but it does the same thing:
+In Python, it has a different structure*, but it does the same thing:
 
 ```python
 for x in range(0, 3):
   print(x)
 
 ```    
-
+* **The "Pythonic" way is to use 4 spaces to indent code that's inside of a loop or a function definition. You must do this.**
 
 ### Reading files
 
