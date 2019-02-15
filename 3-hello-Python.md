@@ -439,7 +439,8 @@ Sometimes you have to tell python to add **modules** with the **import** keyword
 
 - Use the documentation to find what you can do with a module
 - Make sure you’re seeing the documentation of the python version you’re using (e.g. 3.5)
-    # Import the module
+# Import the module
+```python    
     import random
     
     text = open("kafka.txt").readlines()
@@ -451,7 +452,7 @@ Sometimes you have to tell python to add **modules** with the **import** keyword
       random_word = random.choice(words)  #Get a random item from the word list
       
       random.shuffle(words) # Randomizes the order of the items in the list
-    
+```    
 
 
 We use the join() method to join the randomized word list in to a string
