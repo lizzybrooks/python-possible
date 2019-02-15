@@ -338,7 +338,7 @@ for line in all_lines:
 	print(line[0:5])
 ```
 
-## Day 1 Beyond the Basics
+## Beyond the Basics
 
 
 We’ll grab Kafka’s Metamorphosis from gutenberg
