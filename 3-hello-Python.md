@@ -1,9 +1,9 @@
 ## Basics
 
-1. To start, cd to the folder where you have your virtual environment, and activate it:
+1. To start, cd to the folder where you have your virtual environment, and activate it (replace first_env with the name of your virtual environment):
 
 ```
-source name_of_your_environment/bin/activate
+source first_env/bin/activate
 ```
 This makes sure that you're running the version of python that you've created for this project. 
 
