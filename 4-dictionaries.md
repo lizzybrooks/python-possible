@@ -17,7 +17,7 @@ WINDOWS
 **Dictionaries are Key and Value pairs**
 They’re used to represent structures of data
 
-1. Create a dictionary with the names and ages of everyone at your table. 
+1. Collaborative Dictionary activity: Make a dictionary with information for someone at your table.  
 
 In python, you define dictionaries with curly brackets { }
 
@@ -40,7 +40,7 @@ the values can be of any type: int, float, boolean, Strings, or even other dicti
 
 **Dictionaries can contain any type, including dictionaries and lists**
 
-2. Add additional information about each person in your dictionary (you will have to talk with each other). 
+2. Combine all the dictionaries into a single dictionary with nested dictionaries (you will have to talk with each other). Feel free to add additional information. 
     
     person = { 
       "first_name": "Karl", 
@@ -118,4 +118,4 @@ If the key doesn’t exist, you can create it and assign a value
     # now there's a new key middle_name with value Terry
     
 
-
+3. Mess around with your dictionary. When you're happy with what you have, screenshot your code and upload that image to the new class (blog)[https://sites.google.com/lwhs.org/computing2/home] (one per group). 
