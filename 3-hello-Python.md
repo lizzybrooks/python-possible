@@ -343,40 +343,52 @@ for line in all_lines:
 ## Beyond the Basics
 
 
-We’ll grab Kafka’s Metamorphosis from gutenberg
-https://www.gutenberg.org/cache/epub/5200/pg5200.txt
+Go online and find a text file that's exciting for you.
+I got the full text of Harry Potter and the Sorcerer's Stone from (here)[http://www.glozman.com/textpages.html]
 
-Save it to a file next to our python script
+Save it to a file next to your python script
 
 We’ll read the text file and store it as a variable
 In our python script:
 
     
-    text = open("kafka.txt").read() # the name of the file, relative to where the script is
+    text = open("harrypotter1.txt").read() # the name of the file, relative to where the script is
     
     print(text) # Outputs: the entire text
     
     
+If you have issues with that, a few troubleshooting tips: 
+* Is your console outputting a unicode error? It's possible there are characters in your text file that are scaring the python. Try adding this command.
 
-Now we can do stuff with it
+```
+text = open("harrypotter.txt", encoding="ascii", errors="surrogateescape").read() 
+```
+* Is your text file right next to your .py file, but python still can't find it? Try printing your file path:
+```
+import os
+print (os.getcwd())
+```
+If you're in the wrong directory, you can cd around in python just like you do in the command line, it's just called chdir instead of cd: 
+```
+os.chdir("..")
+```
 
+Hopefully that's working. Now we can do stuff with it. Count how many times Harry is mentioned: 
 
-    
-    print(text.upper())
-    
-
+```python
+text = open("harry_potter_1.txt", encoding="ascii", errors="surrogateescape").read() 
+count = text.count("Harry")
+print(count)
+ ```
 
 To read every single lines, Instead of read() we use readlines()
-
     
-    text = open("kafka.txt").readlines()
+    text = open("harrypotter.txt").readlines()
     # text is now a list of string items, with each line from the file
     
 
 Now we can iterate over the lines
-
-
-    
+   
     for line in text:
       print(line) #Outputs each line
       
@@ -385,17 +397,13 @@ The problem, it’s putting a space in between each line.
 This is because there’s an extra character after a line break, called a newline character
 We can get rid of that with strip()
 
-
     
     for line in text:
       line = line.strip()
       print(line) # Outputs each line without whitespace or extra line breaks
-      
-
+ 
 
 Each of the lines is a string, so we can print parts of each line
-
-
     
     for line in text:
       line = line.strip()
@@ -405,15 +413,11 @@ Each of the lines is a string, so we can print parts of each line
     
 
 Or do fun stuff like replacing
-
-
-    
+   
     for line in text:
       line = line.strip()
       print(line.replace('e', 'eeeeeee'))
       
-
-
 
 ## Processing text
 
@@ -432,7 +436,6 @@ You can use join() to join a list back into a string
       print(words[0].center(30, '~').upper())
       
 
-
 We can use the **random** methods to do interesting stuff
 
 Sometimes you have to tell python to add **modules** with the **import** keyword to add functionality you need. Here we’ll import the [random module](https://docs.python.org/3.5/library/random.html). 
@@ -443,7 +446,7 @@ Sometimes you have to tell python to add **modules** with the **import** keyword
 ```python    
     import random
     
-    text = open("kafka.txt").readlines()
+    text = open("harrypotter.txt").readlines()
     
     for line in text:
       line = line.strip()
@@ -466,11 +469,7 @@ We use the join() method to join the randomized word list in to a string
       
       new_line = " ".join(words) # Joins each element in the list by sticking the space character in between the words, outputs a string
       
-
-
 We can sort with sorted()
-
-
     
     for line in text:
       line = line.strip()
@@ -482,13 +481,12 @@ We can sort with sorted()
       new_line = " ".join(words)
       
 
-
 Final script
 
     # Import the module
     import random
     
-    text = open("kafka.txt").readlines()
+    text = open("harrypotter.txt").readlines()
     for line in text:
       line = line.strip()
       words = line.split(" ")
@@ -505,7 +503,7 @@ Make a new file comps.py
 
 We can make a list of upper case’d items
 
-    names = ["Trotsky", "Marx", "Lenin", "Engels"]
+    names = ["Hermione", "Harry", "Ron", "Dumbledore"]
     
     uppercase_names = []
     for name in names:
@@ -516,7 +514,7 @@ We can make a list of upper case’d items
 There’s a handier way of doing this in python, called **list comprehension.**
 This does the same thing as the example above
 
-    names = ["Trotsky", "Marx", "Lenin", "Engels"]
+    names = ["Hermione", "Harry", "Ron", "Dumbledore"]
     
     uppercase_names = [name.upper() for name in names]
     
@@ -540,7 +538,7 @@ We can add this filtering technique to the words in our previous example
 
     import random
     
-    text = open("kafka.txt").readlines()
+    text = open("harrypotter.txt").readlines()
     for line in text:
       line = line.strip()
       words = line.split(" ")
