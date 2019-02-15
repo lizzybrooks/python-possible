@@ -3,9 +3,11 @@
 1. To start, cd to the folder where you have your virtual environment, and activate it:
 
 ```
-your_env\Scripts\activate
+source name_of_your_environment/bin/activate
 ```
 This makes sure that you're running the version of python that you've created for this project. 
+
+Honestly though, if this step is annoying to you, you can skip it for now. Your project will still work as long as you haven't installed competing versions of Python and its packages. Just know that you should figure out how to do it when you get deeper into Python work. 
 
 2. Create a new file called `hello.py` and put this in it:
 
