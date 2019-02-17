@@ -51,9 +51,9 @@ There’s different types for different things
   - \<h1\>My Header\</h1\>
 ```  
 
-- \<div\> represents a random division of text
+- \<div\> represents a random division of text. (It helps keep things organized). 
 ```
-  - \<div\>I’m a div\</div\>
+  - <div>I’m a div</div>
 ``` 
 
 4. Add some headers and a link or two to your index.html file.
