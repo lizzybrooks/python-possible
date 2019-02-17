@@ -48,7 +48,7 @@ There’s different types for different things
 - \<h1\> makes a header
 
 ```
-  - \<h1\>My Header\</h1\>
+  - <h1>What You Write in Here Will Be Big Title Text</h1>
 ```  
 
 - \<div\> represents a random division of text. (It helps keep things organized). 
