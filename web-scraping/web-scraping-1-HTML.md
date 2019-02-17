@@ -18,12 +18,12 @@ Markup language means a computer language that defines the structure and appeara
 
 3. Practice changing the text that displays in your browser (edit your index.html file, save, and refresh). 
 
-HTML works as a series of **tags**
-A tag looks like
+HTML works as a series of **tags**.
+A tag looks like:
 
     \<tagname\>some stuff\</tagname\>
 
-The beginning of the tag, the contents of it, and the closing of a tag
+The beginning of the tag, the contents of it, and the closing of a tag. Note that the closing tag has a / before the tagname. 
 
 There’s different types for different things
 
