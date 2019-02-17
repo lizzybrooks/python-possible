@@ -31,7 +31,7 @@ There’s different types for different things
 - \<p\> paragraph
 - \<strong\> makes text bold
 ```
-  - this text is normal and \<strong\>this text is bold\</strong\>
+  - this text is normal and <strong>this text is bold</strong>
 ```  
 
 - <p> paragraph
