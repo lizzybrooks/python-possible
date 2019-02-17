@@ -5,7 +5,7 @@ Here's a lightning introduction to HTML, which, in combination with JavaScript, 
 
 # Intro to HTML
 
-HTML is a markup language, that the web is written in. 
+HTML is a markup language. 
 HTML literally stands for hyper text markup language. 
 Markup language means a computer language that defines the structure and appearance of raw text. 
 
