@@ -1,4 +1,4 @@
-# Scraping the Web 
+# Scraping the Web: Part 1
 
 Before we begin scraping the web with python scripts, it helps to know what you're looking at when you see a web page.
 Here's a lightning introduction to HTML, which, in combination with JavaScript, creates the appearance, structure and functionality of the web. 
