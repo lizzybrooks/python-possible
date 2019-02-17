@@ -32,18 +32,21 @@ There’s different types for different things
 - \<strong\> makes text bold
 
   - this text is normal and <strong> this text is bold </strong>
-  
+ ```
+  - this text is normal and \<strong\>this text is bold\</strong\>
+``` 
 
 - <p> paragraph
 - <strong> makes text bold
 ```
   - this text is normal and <strong>this text is bold</strong>
 ```  
-- <a> makes a link
-```
-  - <a href=”http://www.google.com>go to google</a>
 ```  
-- <h1> makes a header
+- \<a\> makes a link
+```
+  - \<a href=”http://www.google.com\>go to google\</a\>
+```  
+- \<h1\> makes a header
 ```
   - \<h1\>My Header\</h1\>
 ```  
@@ -53,6 +56,7 @@ There’s different types for different things
 ``` 
 
 4. Add some headers and a link or two to your index.html file.
+
 
 ## Attributes
 
