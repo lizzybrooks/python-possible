@@ -192,14 +192,13 @@ so we’ll try to find **all the \<a\> tags with the result-title attribute, to 
 
 You can quickly find elements inside the browser using the **Console.**
 
+You may not have done this before, but you can actually type JavaScript commands into the console and the scripts will run on your page. Try it: 
+
+```JavaScript
+document.querySelectorAll("h4")// finds all the h4 tags
+```
+
 you can use the document.querySelectorAll() that takes one argument that is a css selector
-
-
-    
-    document.querySelectorAll("h2") // finds all the h2 tags
-    
-
-
 
 
 ## Getting the CSS selector for an element automatically
