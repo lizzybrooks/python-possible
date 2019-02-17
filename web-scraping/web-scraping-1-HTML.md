@@ -36,20 +36,19 @@ There’s different types for different things
   - this text is normal and \<strong\>this text is bold\</strong\>
 ``` 
 
-- <p> paragraph
-- <strong> makes text bold
-```
-  - this text is normal and <strong>this text is bold</strong>
-```  
-```  
+     
 - \<a\> makes a link
+
 ```
-  - \<a href=”http://www.google.com\>go to google\</a\>
+  - <a href=”http://www.google.com>go to google</a>
 ```  
-- \<h1\> makes a header
+
+- <h1> makes a header
+
 ```
   - \<h1\>My Header\</h1\>
 ```  
+
 - \<div\> represents a random division of text
 ```
   - \<div\>I’m a div\</div\>
