@@ -21,22 +21,22 @@ Markup language means a computer language that defines the structure and appeara
 HTML works as a series of **tags**.
 A tag looks like:
 
-    \<tagname\>some stuff\</tagname\>
+    <tagname>some stuff</tagname>
 
 The beginning of the tag, the contents of it, and the closing of a tag. Note that the closing tag has a / before the tagname. 
 
 There’s different types for different things
 
-- \<p\> paragraph
-- \<strong\> makes text bold
+- <p> paragraph
+- <strong> makes text bold
 ```
-  - this text is normal and \<strong\>this text is bold\</strong\>
+  - this text is normal and <strong>this text is bold</strong>
 ```  
-- \<a\> makes a link
+- <a> makes a link
 ```
-  - \<a href=”http://www.google.com\>go to google\</a\>
+  - <a href=”http://www.google.com>go to google</a>
 ```  
-- \<h1\> makes a header
+- <h1> makes a header
 ```
   - \<h1\>My Header\</h1\>
 ```  
