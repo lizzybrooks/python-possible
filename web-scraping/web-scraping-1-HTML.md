@@ -31,10 +31,12 @@ There’s different types for different things
 - \<p\> paragraph
 - \<strong\> makes text bold
 
-  - this text is normal and <strong> this text is bold </strong>
  ```
-  - this text is normal and \<strong\>this text is bold\</strong\>
+  - this text is normal and <strong>this text is bold</strong>
 ``` 
+
+  - this text is normal and <strong> this text is bold </strong>
+
 
      
 - \<a\> makes a link
@@ -43,7 +45,7 @@ There’s different types for different things
   - <a href=”http://www.google.com>go to google</a>
 ```  
 
-- <h1> makes a header
+- \<h1\> makes a header
 
 ```
   - \<h1\>My Header\</h1\>
