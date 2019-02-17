@@ -27,6 +27,13 @@ The beginning of the tag, the contents of it, and the closing of a tag. Note tha
 
 There’s different types for different things
 
+
+- \<p\> paragraph
+- \<strong\> makes text bold
+```
+  - this text is normal and \<strong\>this text is bold\</strong\>
+```  
+
 - <p> paragraph
 - <strong> makes text bold
 ```
