@@ -1,6 +1,8 @@
 # Puzzles and Prompts
 Here is a collection of assignments, challenges and puzzles that you can do with Python. Let's keep building out this list with new ideas and links and projects. 
 
+_____________________________________________
+
 # Creative Prompts/Assignments
 ### Algorithmic Poetry
 Transform a non-poetic text into a poetic text. Take something that exists, do something that transforms it.
@@ -20,6 +22,7 @@ If you don’t know what to do try sorting, randomizing, replacing, deleting thi
 
 * If you’re feeling ambitious, make this program so that it can deal with any text. Make this poetic operation so it can work with any text that you feed it.
 
+_______________________________________________________________________________________________________________
 
 # Mathy Prompts/Assignments
 ### Fibonnaci Challenge
@@ -29,6 +32,7 @@ What happens when you give 34 as the input? what abe 67?
 
 Try to write a faster version of the function. (hint: dictionaries are your friend!)
 
+_________________________________________________________________________________________________________________
 
 # Puzzle Hubs
 
