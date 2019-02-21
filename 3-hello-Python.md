@@ -559,5 +559,5 @@ OR more:
       words = [word for word in words if word.endswith("ing")]
       # all the words that end in ing
 
-
-#### Creative and Mathy assigments are now located on the Python Puzzles page. 
+### Ready to do something interesting with these skills? 
+#### Creative and Mathy assigments are now located on the [Python Puzzles](https://github.com/lizzybrooks/python-possible/blob/master/5-python-puzzles.mdf) page. 
