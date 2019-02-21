@@ -13,6 +13,8 @@ Transform a non-poetic text into a poetic text. Take something that exists, do s
 
 - explore word counts if you're interested
 
+- [example/starting point](https://github.com/aparrish/rwet/blob/master/some-poetry-generators.ipynb)
+
 
 Read some file, or if the text is short you can just put that text directly into python as a variable.
 
