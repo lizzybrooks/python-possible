@@ -220,18 +220,17 @@ To scrape a page:
 
 ## Installing the library
 
-You can install libraries in self-contained environments, or globally. To install in your virutal environment, first activate your virtual environment:
-
+You can install libraries in self-contained environments, or globally. To install in your virutal environment, first activate your virtual environment: 
 ```
 cd pythonland
 source first_env/bin/activate
 ```
+If you don't feel like using your virtual environment, I won't judge you. Go ahead and install with your main python installation if you prefer that. 
+
 Then install the library. 
 On the terminal:
 
     $ pip3 install requests-html
-
-
 
 
 ## Using it
@@ -246,24 +245,42 @@ On a new python file
     session = HTMLSession()
     
     # open a website
-    r = session.get("https://newyork.craigslist.org/d/missed-connections/search/mis")
+    r = session.get("https://www.lwhs.org/page")
     
     print(r) # returns if it was able to open the page or not
     
-    
+This is going to return something like <Response [200]>, which means: this website is online. 
+
+Response 200 is a hypertext transfer status code. This isn't as complicated as it might seem. 
+Computers and servers on the Internet send requests and responses to each other.
+You just sent a request to a server (a website, in this case), and the server responded with the message 200.
+200 means "This website is online and functioning normally". 
+Another very common status code is 404, which means "not found". You've probably seen that before. 
+A full explanation and list of all the codes is [here, on Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
 **You can find items in the page using css selectors**
+We are now going to try to scrape this page and get the lunch menu. 
 
     
-    titles = r.html.find(".result-title")
-    
-    for title in titles:
-      print(title) # prints out the entire tag
-      
-      print(title.text) # prints out the text inside the tag
-      
-      
+```python
+#import the library
+from requests_html import HTMLSession
 
+# create a new session
+session = HTMLSession()
+
+# open a website
+r = session.get("https://www.lwhs.org/page")
+
+print(r) # returns if it was able to open the page or not
+
+titles = r.html.find(".event-title")
+
+for title in titles:
+    print(title) # prints out the entire tag
+    print(title.text) # prints out the text inside the tag
+```
+            
 **You can access tags from the items in the page**
 
     
@@ -276,8 +293,6 @@ On a new python file
 **We want to also get the description, so we can tell the computer to click on a link and get a part of that other page**
 
 **We also want to get a single element of a page**
-
-    
     
     titles = r.html.find(".result-title")
     for title in titles:
