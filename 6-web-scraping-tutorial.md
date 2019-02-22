@@ -141,7 +141,7 @@ Open Chrome
 ## View source 
 
 go to a website
-e.g. https://newyork.craigslist.org/d/antiques/search/ata
+e.g. https://sfbay.craigslist.org/d/musical-instruments/search/sfc/msa
 
 Right click \> View Source
 to see the source code
@@ -279,6 +279,11 @@ titles = r.html.find(".event-title")
 for title in titles:
     print(title) # prints out the entire tag
     print(title.text) # prints out the text inside the tag
+```
+            
+If you only want the calendar event about lunch, you can specify like this:
+```
+titles = r.html.find(".event-title", containing='lunch')
 ```
             
 **You can access tags from the items in the page**
