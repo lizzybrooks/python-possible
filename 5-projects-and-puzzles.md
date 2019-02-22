@@ -8,9 +8,9 @@ _____________________________________________
 Write a story that someone can navigate through like a game, along the lines of a [choose your own adventure story](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure). 
 You can use text that you write yourself, text that you find, or some combination of both. 
 
-********
-
 [Here's a quick link](https://www.pythonforbeginners.com/basics/getting-user-input-from-the-keyboard) for how to take user input in python. 
+
+********
 
 ### Algorithmic Poetry
 Transform a non-poetic text into a poetic text. Take something that exists, do something that transforms it.
