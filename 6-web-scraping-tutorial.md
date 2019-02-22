@@ -450,3 +450,6 @@ to help with that we can use the render() function to grab the full text of the 
 
     r.html.render()
 
+
+## beyond requests: Beautiful Soup
+If you're excited about web scraping, go check out [beautiful soup](https://www.crummy.com/software/BeautifulSoup/). It's a more comprehensive package for getting information off websites than requests. You can use both of them together. 
