@@ -1,9 +1,13 @@
 
 def is_even(n):
-    ref = {0: True, 1: False}
-    return ref[n%2]
+    # Write a function that returns True if n is even and False if n is odd
 
 def weave(string0, string1):
+    '''
+        This is a doc string. It tells you about what a function does.
+        inputs: two strings 
+        weaves the strings together like so: weave('hello', 'myName')
+    '''
     final_str = ''
     if len(string0) >= len(string1):
         for i in range(len(string1)):
@@ -16,10 +20,7 @@ def weave(string0, string1):
     return final_str
 
 def weave_main(short_str, long_str):
-    final_str = ''
-    for i in range(len(short_str)):
-        final_str += long_str[i]+short_str[i]
-    return final_str
+    # summarize the redundant part of the weave function 
 
 def better_weave(str0, str1):
     if len(str0) >= len(str1):
@@ -65,7 +66,7 @@ def better_fib(n):
             return f(n - 1) + f(n - 2)
     return f(n)
 
-def best_fib(n): # ?
+def best_fib(n): 
     temp = [0, 1]
     for i in range(2, n+1):
         temp1 = temp[0]+temp[1]
