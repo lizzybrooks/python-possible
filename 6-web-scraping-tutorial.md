@@ -220,18 +220,16 @@ To scrape a page:
 
 ## Installing the library
 
-You can install libraries in self-contained environments, or globally. To install in your virutal environment, first activate your virtual environment: 
-```
-cd pythonland
-source first_env/bin/activate
-```
-If you don't feel like using your virtual environment, I won't judge you. Go ahead and install with your main python installation if you prefer that. 
+You can install libraries or packages from within PyCharm: 
 
-Then install the library. 
-On the terminal:
+In the top menu, go to PyCharm --> Preferences.
+Click the name of your project to expand it.
+Click on Project Interpreter.
+Click the + button on the bottom of the window to install a new package.
+Search for the name of your package/library, in this case requests-html.
+Click install package. 
 
-    $ pip3 install requests-html
-
+Voila. All done. Close all the extra windows and go back into your code. 
 
 ## Using it
 
